@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>1/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>714</ColumnWidth1><ColumnWidth2>190</ColumnWidth2><ColumnWidth3>47</ColumnWidth3></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>230</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Find-in-Files><ColumnWidth0>406</ColumnWidth0><ColumnWidth1>58</ColumnWidth1><ColumnWidth2>697</ColumnWidth2></Find-in-Files></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-17740-10239</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-32379-9337</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28488-10242</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>1</ExpandedNode><ExpandedNode>1/Common sources</ExpandedNode><ExpandedNode>1/Common sources/Hardware</ExpandedNode><ExpandedNode>1/Common sources/Mem</ExpandedNode><ExpandedNode>1/Common sources/RS485_Slave</ExpandedNode><ExpandedNode>1/Common sources/RS485_Slave/uart_protocol.c</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20100322_Clean\IAR\Boot_Controller\main.c</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>430</SelStart><SelEnd>430</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20100322_Clean\IAR\Boot_Controller\functions.c</Filename><XPos>0</XPos><YPos>119</YPos><SelStart>2925</SelStart><SelEnd>2925</SelEnd></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01298f10><key>iaridepm.enu1</key></Toolbar-01298f10></Sizes></Row0></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>396</Bottom><Right>320</Right><x>-2</x><y>-2</y><xscreen>234</xscreen><yscreen>194</yscreen><sizeHorzCX>197635</sizeHorzCX><sizeHorzCY>254593</sizeHorzCY><sizeVertCX>271959</sizeVertCX><sizeVertCY>522310</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>322</Bottom><Right>1186</Right><x>-2</x><y>-2</y><xscreen>1188</xscreen><yscreen>324</yscreen><sizeHorzCX>1003378</sizeHorzCX><sizeHorzCY>425197</sizeHorzCY><sizeVertCX>197635</sizeVertCX><sizeVertCY>254593</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

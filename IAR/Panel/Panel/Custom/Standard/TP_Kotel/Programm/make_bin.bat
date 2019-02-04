@@ -1,0 +1,2 @@
+bin_boot.exe -f ..\Debug\Exe\TP_Kotel.a90 -o panel_sys.bin -i "Clean PRJ Kotel" -j -u 1 -h 0x02000021 -s 0x02000021
+bin_boot.exe -f ..\..\..\..\System\Pict_Kotel\pack.bin -o panel_pict.bin -i "Clean PRJ Pictures" -j -u 1 -h 0x02000013 -s 0x02000013

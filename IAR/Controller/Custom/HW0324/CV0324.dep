@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>607469488</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\io.r90</file>
+      <file>$PROJ_DIR$\LCD_Menu\menuitems_lcd_1.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\fram31xx.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_protocol.r90</file>
+      <file>$PROJ_DIR$\..\..\System\Xmodem\xmodem.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_math.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_pid.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.r90</file>
+      <file>$PROJ_DIR$\..\..\System\main.h</file>
+      <file>$PROJ_DIR$\..\..\System\Memory\fram31xx.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_program.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\pid.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\test.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_time.r90</file>
+      <file>$PROJ_DIR$\..\..\System\Pid\pid.h</file>
+      <file>$PROJ_DIR$\..\..\Hardware_Atmel\I2C\i2c.h</file>
+      <file>$TOOLKIT_DIR$\inc\iom128.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fancoil.r90</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm128.xcl</file>
+      <file>$PROJ_DIR$\..\..\System\RS485_Slave\uart_misc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\xmodem.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.r90</file>
+      <file>$PROJ_DIR$\..\..\System\Console\MenuItems_SET.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_functions.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_program.r90</file>
+      <file>$PROJ_DIR$\..\..\System\controller_data_define.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_misc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_errors.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_info.pbi</file>
+      <file>$PROJ_DIR$\..\..\System\Console\MenuItems_SERVICE.h</file>
+      <file>$PROJ_DIR$\..\..\System\Service\errors.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler2_goto.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_language.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\io.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_time.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\custom.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_logic.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler2.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_goto.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler2_math.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_math.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\custom.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_password.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\xmodem.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_errors.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_info.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\errors.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_password.pbi</file>
+      <file>$PROJ_DIR$\..\..\System\define.h</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_goto.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_misc.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\console.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.pbi</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg3s.xcl</file>
+      <file>$PROJ_DIR$\Hardware\io.h</file>
+      <file>$PROJ_DIR$\..\..\System\TMP441\TMP441.h</file>
+      <file>$PROJ_DIR$\..\..\Hardware_Atmel\lcd.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler2_math.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\CV0324.map</file>
+      <file>$PROJ_DIR$\Debug\Obj\fancoil.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\pid.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\CV0324.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler2_goto.r90</file>
+      <file>$PROJ_DIR$\..\..\Hardware_Atmel\functions.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\CV0324.hex</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+      <file>$PROJ_DIR$\..\..\System\Console\console.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\plm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\test.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\plm.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_protocol.pbi</file>
+      <file>$PROJ_DIR$\..\..\System\Misc\types.h</file>
+      <file>$PROJ_DIR$\..\..\System\IO\adc.h</file>
+      <file>$PROJ_DIR$\..\..\System\RS485_Slave\uart_protocol.h</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler2\Compiler2.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\console.r90</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler.pbi</file>
+      <file>$PROJ_DIR$\..\..\System\Service\plm.h</file>
+      <file>$PROJ_DIR$\..\..\System\Memory\eep.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd.pbi</file>
+      <file>$PROJ_DIR$\..\..\System\Timer\timer16.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler2.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_functions.r90</file>
+      <file>$PROJ_DIR$\..\..\System\Misc\header.h</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler\compiler_goto.c</file>
+      <file>$PROJ_DIR$\..\..\System\Misc\crc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\compiler_logic.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.r90</file>
+      <file>$PROJ_DIR$\Hardware\pinout.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\errors.r90</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler\compiler_logic.c</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler\compiler.c</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler\compiler_math.c</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler\compiler_misc.c</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler2\compiler2.c</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler2\compiler2_goto.c</file>
+      <file>$PROJ_DIR$\..\..\System\Compiler2\compiler2_math.c</file>
+      <file>$PROJ_DIR$\..\..\System\Console\console.c</file>
+      <file>$PROJ_DIR$\..\..\System\Console\str.c</file>
+      <file>$PROJ_DIR$\Custom\custom.c</file>
+      <file>$PROJ_DIR$\Custom\fancoil.c</file>
+      <file>$PROJ_DIR$\..\..\Hardware_Atmel\functions.c</file>
+      <file>$PROJ_DIR$\..\..\Hardware_Atmel\I2C\i2c.c</file>
+      <file>$PROJ_DIR$\Hardware\io.c</file>
+      <file>$PROJ_DIR$\..\..\Hardware_Atmel\lcd.c</file>
+      <file>$PROJ_DIR$\..\..\System\IO\adc.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_errors.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_info.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_language.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_password.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_pid.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_program.c</file>
+      <file>$PROJ_DIR$\LCD_Menu\menu_time.c</file>
+      <file>$PROJ_DIR$\..\..\System\Memory\fram31xx.c</file>
+      <file>$PROJ_DIR$\..\..\System\Misc\crc.c</file>
+      <file>$PROJ_DIR$\..\..\System\RS485_Slave\RS485_S_functions.c</file>
+      <file>$PROJ_DIR$\..\..\System\RS485_Slave\RS485_S_protocol.c</file>
+      <file>$PROJ_DIR$\..\..\System\Service\errors.c</file>
+      <file>$PROJ_DIR$\..\..\System\Pid\pid.c</file>
+      <file>$PROJ_DIR$\..\..\System\Service\plm.c</file>
+      <file>$PROJ_DIR$\..\..\System\Service\test.c</file>
+      <file>$PROJ_DIR$\..\..\System\Timer\timer16.c</file>
+      <file>$PROJ_DIR$\..\..\System\Xmodem\xmodem.c</file>
+      <file>$PROJ_DIR$\..\..\System\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\fram31xx.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_pid.r90</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\..\..\System\Console\str.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\menu_language.r90</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 71 77</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\CV0324.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 25 83 70 91 97 34 68 57 39 6 28 60 63 45 53 72 142 46 96 36 94 59 69 51 31 35 54 7 11 37 73 80 24 81 30 48</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\CV0324.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19 64 99 4 8 50 40 75 42 41 103 44 58 89 43 38 106 18 3 104 22 0 62 78 98 29 52 148 47 143 26 14 12 82 2 13 147 21 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler\compiler_goto.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler\compiler_logic.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler\compiler.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler\compiler_math.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler\compiler_misc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler2\compiler2.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler2\compiler2_goto.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Compiler2\compiler2_math.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Console\console.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 23 32</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 23 32</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Console\str.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Custom\custom.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Custom\fancoil.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Hardware_Atmel\functions.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90 61 17 87 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 90 61 17 87 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Hardware_Atmel\I2C\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 90 61 17 87</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 90 61 17 87</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Hardware\io.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 90 61 17 87</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 90 61 17 87</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Hardware_Atmel\lcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 94</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 90 61 17 87</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 90 61 17 87</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\IO\adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 1</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_errors.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_info.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_language.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 148</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_password.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_pid.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_program.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\LCD_Menu\menu_time.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Memory\fram31xx.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84 10 55 27 9 146 144 67 16 76 105 65 56 79 145 95 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 84 10 55 27 9 146 144 67 16 76 105 65 56 79 145 95 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Misc\crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102 84</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 102 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\RS485_Slave\RS485_S_functions.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\RS485_Slave\RS485_S_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Service\errors.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Pid\pid.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Service\plm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Service\test.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Timer\timer16.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 147</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\Xmodem\xmodem.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\System\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9 84 55 27 146 144 67 16 76 105 65 56 79 145 95 10 93 15 88 100 85 66 5 92 102 33 20 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

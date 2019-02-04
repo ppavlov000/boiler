@@ -1,0 +1,142 @@
+// Generated : 12/10/07 02:55:32
+// IAR XLINK Linker command file for Renesas M16C.
+-cm16c
+
+//================================================================
+// USER DEFINITIONS
+// Please customize according to your preferences.
+//================================================================
+
+// Size of the user stack 
+// Uncomment for command line use
+//-D_CSTACK_SIZE=400
+
+// Size of the interrupt stack
+// Uncomment for command line use
+//-D_ISTACK_SIZE=100
+
+// Size of the heap
+// Uncomment for command line use
+//-D_DATA16_HEAP_SIZE=1000
+//-D_FAR_HEAP_SIZE=1000
+//-D_DATA20_HEAP_SIZE=1000
+
+// ID code written to ROM memory for the ID Code Check Function
+-D_ID_CODE_1=56
+-D_ID_CODE_2=CD
+-D_ID_CODE_3=BE
+-D_ID_CODE_4=FF
+-D_ID_CODE_5=DE
+-D_ID_CODE_6=5D
+-D_ID_CODE_7=CF
+-D_OFS_VALUE=FF
+
+// =======================
+//      DATA13 RAM
+// =======================
+
+-Z(NEAR)DATA13_AN=0-1FFF
+-Z(NEAR)DATA13_I=400-1FFF
+-Z(NEAR)DATA13_Z,DATA13_N
+
+// Relocatable "bit" segment (must be in data13 area).
+-Z(BIT)BITVARS=2000-FFFF 
+
+// =======================
+//       DATA16 RAM
+// =======================
+
+// Set up user stack
+-Z(NEAR)CSTACK+_CSTACK_SIZE=400-7FFF
+
+// Set up interrupt stack
+-Z(NEAR)ISTACK+_ISTACK_SIZE
+
+// Set up near heap
+-Z(NEAR)DATA16_HEAP+_DATA16_HEAP_SIZE
+
+// Near variables
+-Z(NEAR)DATA16_I,DATA16_Z,DATA16_N,DATA16_AN
+
+// User defined near DATA segments
+
+
+// =======================
+//       DATA16 ROM
+// =======================
+
+// No NEAR ROM segments defined!
+
+
+// =======================
+//     FAR/DATA20 RAM
+// =======================
+
+// Far and huge data segments
+-Z(FAR)FAR_I,FAR_Z,FAR_N,FAR_AN=400-7FFF
+-Z(FAR)FAR_HEAP+_FAR_HEAP_SIZE
+-Z(HUGE)DATA20_I,DATA20_Z,DATA20_N,DATA20_AN
+-Z(HUGE)DATA20_HEAP+_DATA20_HEAP_SIZE
+
+// User defined far & huge DATA segments
+
+// =======================
+//     FAR/DATA20 ROM
+// =======================
+
+// Constant and initializer segments (in ROM)
+-Z(FARCONST)FAR_ID=F8000-FBFFF
+-Z(FARCONST)FAR_C
+-Z(HUGECONST)DATA20_C,DATA20_ID,CHECKSUM
+-Z(FARCONST)DATA16_ID,DATA13_ID,DIFUNCT
+
+// CODE segments
+-P(HUGECODE)CODE=F8000-FBFFF
+
+// TINYFUNC code must be located above 0xF000
+-Z(HUGECODE)TINYFUNC=FFD00-FFDFF
+
+// Startup code
+-Z(HUGECODE)CSTART=F8000-FBFFF
+
+// User defined CODE segments
+
+// User defined far & huge CONST segments
+
+// Variable vector table
+-Z(CONST)INTVEC=FFD00-FFDFF
+
+// Special page table
+-Z(CONST)FLIST=FFE00-FFFDB
+
+// Fixed interrupt vector table
+-Z(CONST)INTVEC1=FFFDC-FFFFF
+
+// ========================
+// IAR C library formatting
+// ========================
+//-e_small_write=_formatted_write
+//-e_medium_read=_formatted_read 
+
+// ========================
+// Output files
+// ========================
+// Use the -O option to create one or more output files
+// at the same link session. Formats flags, file name and
+// extension is optional. Please un-comment the wanted
+// output formats below.
+//
+// CAUTION: Do not combine ohter output formats with -rt (special
+// UBROF for Terminal I/O in C-SPY). Output files are valid but
+// contain code that expects to be run under C-SPY.
+
+// Motorola output
+//-Omotorola=.mot
+
+// IEEE-695 output with format flags for the Renesas debugger
+//-Oieee695,lbm=.x30
+
+// ELF/DWARF output with format flags for the Renesas debugger
+//-Oelf,spc=.elf
+
+

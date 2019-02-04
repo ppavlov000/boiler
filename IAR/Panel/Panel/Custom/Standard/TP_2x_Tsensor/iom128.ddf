@@ -1,0 +1,931 @@
+[CORE]
+AVR
+
+[CHIP]
+ATmega128
+
+[SFR]
+SFR0    = UCSR1C, DATA,      0x9D, 1 ; USART1 Control and Status Register C
+SFR1    = UDR1,   DATA,      0x9C, 1 ; USART1 I/O Data Register
+SFR2    = UCSR1A, DATA,      0x9B, 1 ; USART1 Control and Status Register A
+SFR3    = UCSR1B, DATA,      0x9A, 1 ; USART1 Control and Status Register B
+SFR4    = UBRR1L, DATA,      0x99, 1 ; USART1 Baud Rate Register Low
+SFR5    = UBRR1H, DATA,      0x98, 1 ; USART1 Baud Rate Register High
+SFR6    = UCSR0C, DATA,      0x95, 1 ; USART0 Control and Status Register C
+SFR7    = UBRR0H, DATA,      0x90, 1 ; USART0 Baud Rate Register High
+SFR8    = TCCR3C, DATA,      0x8C, 1 ; Timer/Counter 3 Control Register C
+SFR9    = TCCR3A, DATA,      0x8B, 1 ; Timer/Counter 3 Control Register A
+SFR10   = TCCR3B, DATA,      0x8A, 1 ; Timer/Counter 3 Control Register B
+SFR11   = TCNT3,  DATA,      0x88, 2 ; Timer/Counter 3 Register
+SFR12   = OCR3A,  DATA,      0x86, 2 ; Timer/Counter 3 Output Compare Register A
+SFR13   = OCR3B,  DATA,      0x84, 2 ; Timer/Counter 3 Output Compare Register B
+SFR14   = OCR3C,  DATA,      0x82, 2 ; Timer/Counter 3 Output Compare Register C
+SFR15   = ICR3,   DATA,      0x80, 2 ; Timer/Counter 3 Input Capture Register
+SFR16   = ETIMSK, DATA,      0x7D, 1 ; Extended Timer/Counter Interrupt Mask Register
+SFR17   = ETIFR,  DATA,      0x7C, 1 ; Extended Timer/Counter Interrupt Flag Register
+SFR18   = TCCR1C, DATA,      0x7A, 1 ; Timer/Counter 1 Control Register C
+SFR19   = OCR1C,  DATA,      0x78, 2 ; Timer/Counter 1 Output Compare Register C
+SFR20   = TWCR,   DATA,      0x74, 1 ; TWI Control Register
+SFR21   = TWDR,   DATA,      0x73, 1 ; TWI Data Register
+SFR22   = TWAR,   DATA,      0x72, 1 ; TWI Address Register
+SFR23   = TWSR,   DATA,      0x71, 1 ; TWI Status Register
+SFR24   = TWBR,   DATA,      0x70, 1 ; TWI Bit Rate Register
+SFR25   = OSCCAL, DATA,      0x6F, 1 ; Oscillator Calibration Register
+SFR26   = XMCRA,  DATA,      0x6D, 1 ; External Memory Control Register A
+SFR27   = XMCRB,  DATA,      0x6C, 1 ; External Memory Control Register B
+SFR28   = EICRA,  DATA,      0x6A, 1 ; External Interrupt Control Register A
+SFR29   = SPMCSR, DATA,      0x68, 1 ; Store Program Memory Control and Status Register
+SFR30   = PORTG,  DATA,      0x65, 1 ; Data Register, Port G
+SFR31   = DDRG,   DATA,      0x64, 1 ; Data Direction Register, Port G
+SFR32   = PING,   DATA,      0x63, 1 ; Input Pins, Port G
+SFR33   = PORTF,  DATA,      0x62, 1 ; Data Register, Port F
+SFR34   = DDRF,   DATA,      0x61, 1 ; Data Direction Register, Port F
+
+SFR35   = SREG,   I/O-SPACE, 0x3F, 1 ; Status Register
+SFR36   = SP,     I/O-SPACE, 0x3D, 2 ; Stack Pointer
+SFR37   = XDIV,   I/O-SPACE, 0x3C, 1 ; XTAL Divide Control Register
+SFR38   = RAMPZ,  I/O-SPACE, 0x3B, 1 ; RAM Page Z Select Register
+SFR39   = EICRB,  I/O-SPACE, 0x3A, 1 ; External Interrupt Control Register B
+SFR40   = EIMSK,  I/O-SPACE, 0x39, 1 ; External Interrupt Mask Register
+SFR41   = EIFR,   I/O-SPACE, 0x38, 1 ; External Interrupt Flag Register
+SFR42   = TIMSK,  I/O-SPACE, 0x37, 1 ; Timer/Counter Interrupt Mask Register
+SFR43   = TIFR,   I/O-SPACE, 0x36, 1 ; Timer/Counter Interrupt Flag Register
+SFR44   = MCUCR,  I/O-SPACE, 0x35, 1 ; MCU general Control Register
+SFR45   = MCUCSR, I/O-SPACE, 0x34, 1 ; MCU general Control and Status Register
+SFR46   = TCCR0,  I/O-SPACE, 0x33, 1 ; Timer/Counter 0 Control Register
+SFR47   = TCNT0,  I/O-SPACE, 0x32, 1 ; Timer/Counter 0
+SFR48   = OCR0,   I/O-SPACE, 0x31, 1 ; Timer/Counter 0 Output Compare Register
+SFR49   = ASSR,   I/O-SPACE, 0x30, 1 ; Asynchronous mode Status Register
+SFR50   = TCCR1A, I/O-SPACE, 0x2F, 1 ; Timer/Counter 1 Control Register A
+SFR51   = TCCR1B, I/O-SPACE, 0x2E, 1 ; Timer/Counter 1 Control Register B
+SFR52   = TCNT1,  I/O-SPACE, 0x2C, 2 ; Timer/Counter 1 Register
+SFR53   = OCR1A,  I/O-SPACE, 0x2A, 2 ; Timer/Counter 1 Output Compare Register A
+SFR54   = OCR1B,  I/O-SPACE, 0x28, 2 ; Timer/Counter 1 Output Compare Register B
+SFR55   = ICR1,   I/O-SPACE, 0x26, 2 ; Timer/Counter 1 Input Capture Register
+SFR56   = TCCR2,  I/O-SPACE, 0x25, 1 ; Timer/Counter 2 Control Register
+SFR57   = TCNT2,  I/O-SPACE, 0x24, 1 ; Timer/Counter 2
+SFR58   = OCR2,   I/O-SPACE, 0x23, 1 ; Timer/Counter 2 Output Compare Register
+SFR59   = OCDR,   I/O-SPACE, 0x22, 1 ; On-Chip Debug Register
+SFR60   = WDTCR,  I/O-SPACE, 0x21, 1 ; Watchdog Timer Control Register
+SFR61   = SFIOR,  I/O-SPACE, 0x20, 1 ; Special Function I/O Register
+SFR62   = EEAR,   I/O-SPACE, 0x1E, 2 ; EEPROM Address Register
+SFR63   = EEDR,   I/O-SPACE, 0x1D, 1 ; EEPROM Data Register
+SFR64   = EECR,   I/O-SPACE, 0x1C, 1 ; EEPROM Control Register
+SFR65   = PORTA,  I/O-SPACE, 0x1B, 1 ; Data Register, Port A
+SFR66   = DDRA,   I/O-SPACE, 0x1A, 1 ; Data Direction Register, Port A
+SFR67   = PINA,   I/O-SPACE, 0x19, 1 ; Input Pins, Port A
+SFR68   = PORTB,  I/O-SPACE, 0x18, 1 ; Data Register, Port B
+SFR69   = DDRB,   I/O-SPACE, 0x17, 1 ; Data Direction Register, Port B
+SFR70   = PINB,   I/O-SPACE, 0x16, 1 ; Input Pins, Port B
+SFR71   = PORTC,  I/O-SPACE, 0x15, 1 ; Data Register, Port C
+SFR72   = DDRC,   I/O-SPACE, 0x14, 1 ; Data Direction Register, Port C
+SFR73   = PINC,   I/O-SPACE, 0x13, 1 ; Input Pins, Port C
+SFR74   = PORTD,  I/O-SPACE, 0x12, 1 ; Data Register, Port D
+SFR75   = DDRD,   I/O-SPACE, 0x11, 1 ; Data Direction Register, Port D
+SFR76   = PIND,   I/O-SPACE, 0x10, 1 ; Input Pins, Port D
+SFR77   = SPDR,   I/O-SPACE, 0x0F, 1 ; SPI I/O Data Register
+SFR78   = SPSR,   I/O-SPACE, 0x0E, 1 ; SPI Status Register
+SFR79   = SPCR,   I/O-SPACE, 0x0D, 1 ; SPI Control Register
+SFR80   = UDR0,   I/O-SPACE, 0x0C, 1 ; USART0 I/O Data Register
+SFR81   = UCSR0A, I/O-SPACE, 0x0B, 1 ; USART0 Control and Status Register A
+SFR82   = UCSR0B, I/O-SPACE, 0x0A, 1 ; USART0 Control and Status Register B
+SFR83   = UBRR0L, I/O-SPACE, 0x09, 1 ; USART0 Baud Rate Register Low
+SFR84   = ACSR,   I/O-SPACE, 0x08, 1 ; Analog Comparator Control and Status Register
+SFR85   = ADMUX,  I/O-SPACE, 0x07, 1 ; ADC Multiplexer Selection Register
+SFR86   = ADCSR,  I/O-SPACE, 0x06, 1 ; ADC Control and Status Register
+SFR87   = ADC,    I/O-SPACE, 0x04, 2 ; ADC Data register
+SFR88   = PORTE,  I/O-SPACE, 0x03, 1 ; Data Register, Port E
+SFR89   = DDRE,   I/O-SPACE, 0x02, 1 ; Data Direction Register, Port E
+SFR90   = PINE,   I/O-SPACE, 0x01, 1 ; Input Pins, Port E
+SFR91   = PINF,   I/O-SPACE, 0x00, 1 ; Input Pins, Port F
+
+
+
+; UCSR1C Bits
+
+SFR92   = UMSEL1, DATA,    0x9D:6-6, 1, base(2) ; USART 1 Control and Status C bit 6
+SFR93   = UPM11,  DATA,    0x9D:5-5, 1, base(2) ; USART 1 Control and Status C bit 5
+SFR94   = UPM10,  DATA,    0x9D:4-4, 1, base(2) ; USART 1 Control and Status C bit 4
+SFR95   = USBS1,  DATA,    0x9D:3-3, 1, base(2) ; USART 1 Control and Status C bit 3
+SFR96   = UCSZ11, DATA,    0x9D:2-2, 1, base(2) ; USART 1 Control and Status C bit 2
+SFR97   = UCSZ10, DATA,    0x9D:1-1, 1, base(2) ; USART 1 Control and Status C bit 1
+SFR98   = UCPOL1, DATA,    0x9D:0-0, 1, base(2) ; USART 1 Control and Status C bit 0 
+
+
+; UCSR1A Bits
+
+SFR99   = RXC1,   DATA,    0x9B:7-7, 1, base(2) ; USART 1 Control and Status A bit 7
+SFR100  = TXC1,   DATA,    0x9B:6-6, 1, base(2) ; USART 1 Control and Status A bit 6
+SFR101  = UDRE1,  DATA,    0x9B:5-5, 1, base(2) ; USART 1 Control and Status A bit 5
+SFR102  = FE1,    DATA,    0x9B:4-4, 1, base(2) ; USART 1 Control and Status A bit 4
+SFR103  = DOR1,   DATA,    0x9B:3-3, 1, base(2) ; USART 1 Control and Status A bit 3
+SFR104  = PE1,    DATA,    0x9B:2-2, 1, base(2) ; USART 1 Control and Status A bit 2
+SFR105  = U2X1,   DATA,    0x9B:1-1, 1, base(2) ; USART 1 Control and Status A bit 1 
+SFR106  = MPCM1,  DATA,    0x9B:0-0, 1, base(2) ; USART 1 Control and Status A bit 0 
+
+
+; UCSR1B Bits
+
+SFR107  = RXCIE1, DATA,    0x9A:7-7, 1, base(2) ; USART 1 Control and Status B bit 7
+SFR108  = TXCIE1, DATA,    0x9A:6-6, 1, base(2) ; USART 1 Control and Status B bit 6
+SFR109  = UDRIE1, DATA,    0x9A:5-5, 1, base(2) ; USART 1 Control and Status B bit 5
+SFR110  = RXEN1,  DATA,    0x9A:4-4, 1, base(2) ; USART 1 Control and Status B bit 4
+SFR111  = TXEN1,  DATA,    0x9A:3-3, 1, base(2) ; USART 1 Control and Status B bit 3
+SFR112  = UCSZ12, DATA,    0x9A:2-2, 1, base(2) ; USART 1 Control and Status B bit 2
+SFR113  = RXB81,  DATA,    0x9A:1-1, 1, base(2) ; USART 1 Control and Status B bit 1 
+SFR114  = TXB81,  DATA,    0x9A:0-0, 1, base(2) ; USART 1 Control and Status B bit 0 
+
+
+; UCSR0C Bits
+
+SFR115  = UMSEL0, DATA,    0x95:6-6, 1, base(2) ; USART 0 Control and Status C bit 6
+SFR116  = UPM01,  DATA,    0x95:5-5, 1, base(2) ; USART 0 Control and Status C bit 5
+SFR117  = UPM00,  DATA,    0x95:4-4, 1, base(2) ; USART 0 Control and Status C bit 4
+SFR118  = USBS0,  DATA,    0x95:3-3, 1, base(2) ; USART 0 Control and Status C bit 3
+SFR119  = UCSZ01, DATA,    0x95:2-2, 1, base(2) ; USART 0 Control and Status C bit 2
+SFR120  = UCSZ00, DATA,    0x95:1-1, 1, base(2) ; USART 0 Control and Status C bit 1 
+SFR121  = UCPOL0, DATA,    0x95:0-0, 1, base(2) ; USART 0 Control and Status C bit 0 
+
+
+; TCCR3C Bits
+
+SFR122  = FOC3A,  DATA,    0x8C:7-7, 1, base(2) ; Timer/Counter 3 Control C bit 7
+SFR123  = FOC3B,  DATA,    0x8C:6-6, 1, base(2) ; Timer/Counter 3 Control C bit 6
+SFR124  = FOC3C,  DATA,    0x8C:5-5, 1, base(2) ; Timer/Counter 3 Control C bit 5
+
+
+; TCCR3A Bits
+
+SFR125  = COM3A1, DATA,    0x8B:7-7, 1, base(2) ; Timer/Counter 3 Control A bit 7
+SFR126  = COM3A0, DATA,    0x8B:6-6, 1, base(2) ; Timer/Counter 3 Control A bit 6
+SFR127  = COM3B1, DATA,    0x8B:5-5, 1, base(2) ; Timer/Counter 3 Control A bit 5
+SFR128  = COM3B0, DATA,    0x8B:4-4, 1, base(2) ; Timer/Counter 3 Control A bit 4
+SFR129  = COM3C1, DATA,    0x8B:3-3, 1, base(2) ; Timer/Counter 3 Control A bit 3
+SFR130  = COM3C0, DATA,    0x8B:2-2, 1, base(2) ; Timer/Counter 3 Control A bit 2 
+SFR131  = WGM31,  DATA,    0x8B:1-1, 1, base(2) ; Timer/Counter 3 Control A bit 1
+SFR132  = WGM30,  DATA,    0x8B:0-0, 1, base(2) ; Timer/Counter 3 Control A bit 0
+
+
+; TCCR3B Bits
+
+SFR133  = ICNC3,  DATA,    0x8A:7-7, 1, base(2) ; Timer/Counter 3 Control B bit 7
+SFR134  = ICES3,  DATA,    0x8A:6-6, 1, base(2) ; Timer/Counter 3 Control B bit 6
+SFR135  = WGM33,  DATA,    0x8A:4-4, 1, base(2) ; Timer/Counter 3 Control B bit 4
+SFR136  = WGM32,  DATA,    0x8A:3-3, 1, base(2) ; Timer/Counter 3 Control B bit 3
+SFR137  = CS32,   DATA,    0x8A:2-2, 1, base(2) ; Timer/Counter 3 Control B bit 2
+SFR138  = CS31,   DATA,    0x8A:1-1, 1, base(2) ; Timer/Counter 3 Control B bit 1 
+SFR139  = CS30,   DATA,    0x8A:0-0, 1, base(2) ; Timer/Counter 3 Control B bit 0
+			       
+
+; ETIMSK Bits
+
+SFR140  = TICIE3, DATA,    0x7D:5-5, 1, base(2) ; Extended T/C Interrupt Mask bit 5
+SFR141  = OCIE3A, DATA,    0x7D:4-4, 1, base(2) ; Extended T/C Interrupt Mask bit 4
+SFR142  = OCIE3B, DATA,    0x7D:3-3, 1, base(2) ; Extended T/C Interrupt Mask bit 3
+SFR143  = TOIE3,  DATA,    0x7D:2-2, 1, base(2) ; Extended T/C Interrupt Mask bit 2
+SFR144  = OCIE3C, DATA,    0x7D:1-1, 1, base(2) ; Extended T/C Interrupt Mask bit 1
+SFR145  = OCIE1C, DATA,    0x7D:0-0, 1, base(2) ; Extended T/C Interrupt Mask bit 0 
+
+
+; ETIFR Bits
+
+SFR146  = ICF3,   DATA,    0x7C:5-5, 1, base(2) ; Extended T/C Interrupt Flag bit 5
+SFR147  = OCF3A,  DATA,    0x7C:4-4, 1, base(2) ; Extended T/C Interrupt Flag bit 4
+SFR148  = OCF3B,  DATA,    0x7C:3-3, 1, base(2) ; Extended T/C Interrupt Flag bit 3
+SFR149  = TOV3,   DATA,    0x7C:2-2, 1, base(2) ; Extended T/C Interrupt Flag bit 2
+SFR150  = OCF3C,  DATA,    0x7C:1-1, 1, base(2) ; Extended T/C Interrupt Flag bit 1
+SFR151  = OCF1C,  DATA,    0x7C:0-0, 1, base(2) ; Extended T/C Interrupt Flag bit 0 
+
+
+; TCCR1C Bits
+
+SFR152  = FOC1A,  DATA,    0x7A:7-7, 1, base(2) ; Timer/Counter 1 Control C bit 7
+SFR153  = FOC1B,  DATA,    0x7A:6-6, 1, base(2) ; Timer/Counter 1 Control C bit 6
+SFR154  = FOC1C,  DATA,    0x7A:5-5, 1, base(2) ; Timer/Counter 1 Control C bit 5
+
+
+; TWCR Bits
+
+SFR155  = TWINT,  DATA,    0x74:7-7, 1, base(2) ; TWI Control bit 7
+SFR156  = TWEA,   DATA,    0x74:6-6, 1, base(2) ; TWI Control bit 6
+SFR157  = TWSTA,  DATA,    0x74:5-5, 1, base(2) ; TWI Control bit 5
+SFR158  = TWSTO,  DATA,    0x74:4-4, 1, base(2) ; TWI Control bit 4
+SFR159  = TWWC,   DATA,    0x74:3-3, 1, base(2) ; TWI Control bit 3
+SFR160  = TWEN,   DATA,    0x74:2-2, 1, base(2) ; TWI Control bit 2 
+SFR161  = TWIE,   DATA,    0x74:0-0, 1, base(2) ; TWI Control bit 0 
+
+
+; TWAR Bits
+	      
+SFR162  = TWA6,   DATA,    0x72:7-7, 1, base(2) ; TWI Address bit 7
+SFR163  = TWA5,   DATA,    0x72:6-6, 1, base(2) ; TWI Address bit 6
+SFR164  = TWA4,   DATA,    0x72:5-5, 1, base(2) ; TWI Address bit 5
+SFR165  = TWA3,   DATA,    0x72:4-4, 1, base(2) ; TWI Address bit 4
+SFR166  = TWA2,   DATA,    0x72:3-3, 1, base(2) ; TWI Address bit 3
+SFR167  = TWA1,   DATA,    0x72:2-2, 1, base(2) ; TWI Address bit 2 
+SFR168  = TWA0,   DATA,    0x72:1-1, 1, base(2) ; TWI Address bit 1 
+SFR169  = TWGCE,  DATA,    0x72:0-0, 1, base(2) ; TWI Address bit 0 
+
+
+; TWAR Bits
+	      
+SFR170  = TWS7,   DATA,    0x71:7-7, 1, base(2) ; TWI Status bit 7
+SFR171  = TWS6,   DATA,    0x71:6-6, 1, base(2) ; TWI Status bit 6
+SFR172  = TWS5,   DATA,    0x71:5-5, 1, base(2) ; TWI Status bit 5
+SFR173  = TWS4,   DATA,    0x71:4-4, 1, base(2) ; TWI Status bit 4
+SFR174  = TWS3,   DATA,    0x71:3-3, 1, base(2) ; TWI Status bit 3
+SFR175  = TWPS1,  DATA,    0x71:1-1, 1, base(2) ; TWI Status bit 1 
+SFR176  = TWPS0,  DATA,    0x71:0-0, 1, base(2) ; TWI Status bit 0 
+
+
+; XMCRA Bits
+	      
+SFR177  = SRL2,   DATA,    0x6D:6-6, 1, base(2) ; External Memory Control A bit 6
+SFR178  = SRL1,   DATA,    0x6D:5-5, 1, base(2) ; External Memory Control A bit 5
+SFR179  = SRL0,   DATA,    0x6D:4-4, 1, base(2) ; External Memory Control A bit 4
+SFR180  = SRW01,  DATA,    0x6D:3-3, 1, base(2) ; External Memory Control A bit 3
+SFR181  = SRW00,  DATA,    0x6D:2-2, 1, base(2) ; External Memory Control A bit 2
+SFR182  = SRW11,  DATA,    0x6D:1-1, 1, base(2) ; External Memory Control A bit 1 
+
+
+; XMCRB Bits
+	      
+SFR183  = XMM2,   DATA,    0x6C:2-2, 1, base(2) ; External Memory Control B bit 2
+SFR184  = XMM1,   DATA,    0x6C:1-1, 1, base(2) ; External Memory Control B bit 1
+SFR185  = XMM0,   DATA,    0x6C:0-0, 1, base(2) ; External Memory Control B bit 0
+
+
+; EICRA Bits
+	      
+SFR186  = ISC31,  DATA,    0x6A:7-7, 1, base(2) ; External Interrupt Control A bit 7
+SFR187  = ISC30,  DATA,    0x6A:6-6, 1, base(2) ; External Interrupt Control A bit 6
+SFR188  = ISC21,  DATA,    0x6A:5-5, 1, base(2) ; External Interrupt Control A bit 5
+SFR189  = ISC20,  DATA,    0x6A:4-4, 1, base(2) ; External Interrupt Control A bit 4
+SFR190  = ISC11,  DATA,    0x6A:3-3, 1, base(2) ; External Interrupt Control A bit 3
+SFR191  = ISC10,  DATA,    0x6A:2-2, 1, base(2) ; External Interrupt Control A bit 2 
+SFR192  = ISC01,  DATA,    0x6A:1-1, 1, base(2) ; External Interrupt Control A bit 1 
+SFR193  = ISC00,  DATA,    0x6A:0-0, 1, base(2) ; External Interrupt Control A bit 0
+
+
+; SPMCSR Bits
+	      
+SFR194  = SPMIE,  DATA,    0x68:7-7, 1, base(2) ; Store Program Memory Control and Status bit 7
+SFR195  = RWWSB,  DATA,    0x68:6-6, 1, base(2) ; Store Program Memory Control and Status bit 6
+SFR196  = RWWSRE, DATA,    0x68:4-4, 1, base(2) ; Store Program Memory Control and Status bit 4
+SFR197  = BLBSET, DATA,    0x68:3-3, 1, base(2) ; Store Program Memory Control and Status bit 3
+SFR198  = PGWRT,  DATA,    0x68:2-2, 1, base(2) ; Store Program Memory Control and Status bit 2
+SFR199  = PGERS,  DATA,    0x68:1-1, 1, base(2) ; Store Program Memory Control and Status bit 1 
+SFR200  = SPMEN,  DATA,    0x68:0-0, 1, base(2) ; Store Program Memory Control and Status bit 0 
+
+
+; PORTG Bits
+	      
+SFR201  = PORTG2, DATA,    0x65:2-2, 1, base(2) ; Data Register bit 2
+SFR202  = PORTG1, DATA,    0x65:1-1, 1, base(2) ; Data Register bit 1
+SFR203  = PORTG0, DATA,    0x65:0-0, 1, base(2) ; Data Register bit 0
+SFR204  = DDRG2,  DATA,    0x64:2-2, 1, base(2) ; Data Direction bit 2
+SFR205  = DDRG1,  DATA,    0x64:1-1, 1, base(2) ; Data Direction bit 1
+SFR206  = DDRG0,  DATA,    0x64:0-0, 1, base(2) ; Data Direction bit 0
+SFR207  = PING2,  DATA,    0x63:2-2, 1, base(2) ; Input Pins bit 2
+SFR208  = PING1,  DATA,    0x63:1-1, 1, base(2) ; Input Pins bit 1
+SFR209  = PING0,  DATA,    0x63:0-0, 1, base(2) ; Input Pins bit 0
+
+
+; PORTF bits
+
+SFR210  = PORTF7, DATA,    0x62:7-7, 1, base(2) ; Data Register bit 7
+SFR211  = PORTF6, DATA,    0x62:6-6, 1, base(2) ; Data Register bit 6
+SFR212  = PORTF5, DATA,    0x62:5-5, 1, base(2) ; Data Register bit 5
+SFR213  = PORTF4, DATA,    0x62:4-4, 1, base(2) ; Data Register bit 4
+SFR214  = PORTF3, DATA,    0x62:3-3, 1, base(2) ; Data Register bit 3
+SFR215  = PORTF2, DATA,    0x62:2-2, 1, base(2) ; Data Register bit 2
+SFR216  = PORTF1, DATA,    0x62:1-1, 1, base(2) ; Data Register bit 1
+SFR217  = PORTF0, DATA,    0x62:0-0, 1, base(2) ; Data Register bit 0
+SFR218  = DDRF7,  DATA,    0x61:7-7, 1, base(2) ; Data Direction bit 7
+SFR219  = DDRF6,  DATA,    0x61:6-6, 1, base(2) ; Data Direction bit 6
+SFR220  = DDRF5,  DATA,    0x61:5-5, 1, base(2) ; Data Direction bit 5
+SFR221  = DDRF4,  DATA,    0x61:4-4, 1, base(2) ; Data Direction bit 4
+SFR222  = DDRF3,  DATA,    0x61:3-3, 1, base(2) ; Data Direction bit 3
+SFR223  = DDRF2,  DATA,    0x61:2-2, 1, base(2) ; Data Direction bit 2
+SFR224  = DDRF1,  DATA,    0x61:1-1, 1, base(2) ; Data Direction bit 1
+SFR225  = DDRF0,  DATA,    0x61:0-0, 1, base(2) ; Data Direction bit 0
+
+
+; SREG Bits
+
+SFR226  = I-Flag, I/O-SPACE, 0x3F:7-7, 1, base(2) ; Status REGister bit 7
+SFR227  = T-Flag, I/O-SPACE, 0x3F:6-6, 1, base(2) ; Status REGister bit 6
+SFR228  = H-Flag, I/O-SPACE, 0x3F:5-5, 1, base(2) ; Status REGister bit 5
+SFR229  = S-Flag, I/O-SPACE, 0x3F:4-4, 1, base(2) ; Status REGister bit 4
+SFR230  = V-Flag, I/O-SPACE, 0x3F:3-3, 1, base(2) ; Status REGister bit 3
+SFR231  = N-Flag, I/O-SPACE, 0x3F:2-2, 1, base(2) ; Status REGister bit 2
+SFR232  = Z-Flag, I/O-SPACE, 0x3F:1-1, 1, base(2) ; Status REGister bit 1
+SFR233  = C-Flag, I/O-SPACE, 0x3F:0-0, 1, base(2) ; Status REGister bit 0
+    
+
+; SP Bits
+
+SFR234  = SP15,   I/O-SPACE, 0x3E:7-7, 1, base(2) ; Stack Pointer bit 15
+SFR235  = SP14,   I/O-SPACE, 0x3E:6-6, 1, base(2) ; Stack Pointer bit 14
+SFR236  = SP13,   I/O-SPACE, 0x3E:5-5, 1, base(2) ; Stack Pointer bit 13
+SFR237  = SP12,   I/O-SPACE, 0x3E:4-4, 1, base(2) ; Stack Pointer bit 12
+SFR238  = SP11,   I/O-SPACE, 0x3E:3-3, 1, base(2) ; Stack Pointer bit 11
+SFR239  = SP10,   I/O-SPACE, 0x3E:2-2, 1, base(2) ; Stack Pointer bit 10
+SFR240  = SP9,    I/O-SPACE, 0x3E:1-1, 1, base(2) ; Stack Pointer bit 9
+SFR241  = SP8,    I/O-SPACE, 0x3E:0-0, 1, base(2) ; Stack Pointer bit 8
+SFR242  = SP7,    I/O-SPACE, 0x3D:7-7, 1, base(2) ; Stack Pointer bit 7
+SFR243  = SP6,    I/O-SPACE, 0x3D:6-6, 1, base(2) ; Stack Pointer bit 6
+SFR244  = SP5,    I/O-SPACE, 0x3D:5-5, 1, base(2) ; Stack Pointer bit 5
+SFR245  = SP4,    I/O-SPACE, 0x3D:4-4, 1, base(2) ; Stack Pointer bit 4
+SFR246  = SP3,    I/O-SPACE, 0x3D:3-3, 1, base(2) ; Stack Pointer bit 3
+SFR247  = SP2,    I/O-SPACE, 0x3D:2-2, 1, base(2) ; Stack Pointer bit 2
+SFR248  = SP1,    I/O-SPACE, 0x3D:1-1, 1, base(2) ; Stack Pointer bit 1
+SFR249  = SP0,    I/O-SPACE, 0x3D:0-0, 1, base(2) ; Stack Pointer bit 0
+
+
+; XDIV Bits
+
+SFR250  = XDIVEN, I/O-SPACE, 0x3C:7-7, 1, base(2) ; XTAL Divide Control bit 7
+SFR251  = XDIV6,  I/O-SPACE, 0x3C:6-6, 1, base(2) ; XTAL Divide Control bit 6
+SFR252  = XDIV5,  I/O-SPACE, 0x3C:5-5, 1, base(2) ; XTAL Divide Control bit 5
+SFR253  = XDIV4,  I/O-SPACE, 0x3C:4-4, 1, base(2) ; XTAL Divide Control bit 4
+SFR254  = XDIV3,  I/O-SPACE, 0x3C:3-3, 1, base(2) ; XTAL Divide Control bit 3
+SFR255  = XDIV2,  I/O-SPACE, 0x3C:2-2, 1, base(2) ; XTAL Divide Control bit 2
+SFR256  = XDIV1,  I/O-SPACE, 0x3C:1-1, 1, base(2) ; XTAL Divide Control bit 1
+SFR257  = XDIV0,  I/O-SPACE, 0x3C:0-0, 1, base(2) ; XTAL Divide Control bit 0
+
+
+; RAMPZ Bits
+
+SFR258  = RAMPZ0, I/O-SPACE, 0x3B:0-0, 1, base(2) ; RAM Page Z Select bit 0
+
+
+; EICRB Bits
+
+SFR259  = ISC71,  I/O-SPACE, 0x3A:7-7, 1, base(2) ; External Interrupt Control bit 7
+SFR260  = ISC70,  I/O-SPACE, 0x3A:6-6, 1, base(2) ; External Interrupt Control bit 6
+SFR261  = ISC61,  I/O-SPACE, 0x3A:5-5, 1, base(2) ; External Interrupt Control bit 5
+SFR262  = ISC60,  I/O-SPACE, 0x3A:4-4, 1, base(2) ; External Interrupt Control bit 4
+SFR263  = ISC51,  I/O-SPACE, 0x3A:3-3, 1, base(2) ; External Interrupt Control bit 3
+SFR264  = ISC50,  I/O-SPACE, 0x3A:2-2, 1, base(2) ; External Interrupt Control bit 2
+SFR265  = ISC41,  I/O-SPACE, 0x3A:1-1, 1, base(2) ; External Interrupt Control bit 1
+SFR266  = ISC40,  I/O-SPACE, 0x3A:0-0, 1, base(2) ; External Interrupt Control bit 0
+
+
+; EIMSK Bits
+
+SFR267  = INT7,   I/O-SPACE, 0x39:7-7, 1, base(2) ; External Interrupt Mask bit 7
+SFR268  = INT6,   I/O-SPACE, 0x39:6-6, 1, base(2) ; External Interrupt Mask bit 6
+SFR269  = INT5,   I/O-SPACE, 0x39:5-5, 1, base(2) ; External Interrupt Mask bit 5
+SFR270  = INT4,   I/O-SPACE, 0x39:4-4, 1, base(2) ; External Interrupt Mask bit 4
+SFR271  = INT3,   I/O-SPACE, 0x39:3-3, 1, base(2) ; External Interrupt Mask bit 3
+SFR272  = INT2,   I/O-SPACE, 0x39:2-2, 1, base(2) ; External Interrupt Mask bit 2
+SFR273  = INT1,   I/O-SPACE, 0x39:1-1, 1, base(2) ; External Interrupt Mask bit 1
+SFR274  = INT0,   I/O-SPACE, 0x39:0-0, 1, base(2) ; External Interrupt Mask bit 0
+
+
+; EIFR Bits
+
+SFR275  = INTF7,  I/O-SPACE, 0x38:7-7, 1, base(2) ; External Interrupt Flag bit 7
+SFR276  = INTF6,  I/O-SPACE, 0x38:6-6, 1, base(2) ; External Interrupt Flag bit 6
+SFR277  = INTF5,  I/O-SPACE, 0x38:5-5, 1, base(2) ; External Interrupt Flag bit 5
+SFR278  = INTF4,  I/O-SPACE, 0x38:4-4, 1, base(2) ; External Interrupt Flag bit 4
+SFR279  = INTF3,  I/O-SPACE, 0x38:3-3, 1, base(2) ; External Interrupt Flag bit 3
+SFR280  = INTF2,  I/O-SPACE, 0x38:2-2, 1, base(2) ; External Interrupt Flag bit 2
+SFR281  = INTF1,  I/O-SPACE, 0x38:1-1, 1, base(2) ; External Interrupt Flag bit 1
+SFR282  = INTF0,  I/O-SPACE, 0x38:0-0, 1, base(2) ; External Interrupt Flag bit 0
+
+
+; TIMSK Bits
+
+SFR283  = OCIE2,  I/O-SPACE, 0x37:7-7, 1, base(2) ; Timer/Counter Interrupt Mask bit 7
+SFR284  = TOIE2,  I/O-SPACE, 0x37:6-6, 1, base(2) ; Timer/Counter Interrupt Mask bit 6
+SFR285  = TICIE1, I/O-SPACE, 0x37:5-5, 1, base(2) ; Timer/Counter Interrupt Mask bit 5
+SFR286  = OCIE1A, I/O-SPACE, 0x37:4-4, 1, base(2) ; Timer/Counter Interrupt Mask bit 4
+SFR287  = OCIE1B, I/O-SPACE, 0x37:3-3, 1, base(2) ; Timer/Counter Interrupt Mask bit 3
+SFR288  = TOIE1,  I/O-SPACE, 0x37:2-2, 1, base(2) ; Timer/Counter Interrupt Mask bit 2
+SFR289  = OCIE0,  I/O-SPACE, 0x37:1-1, 1, base(2) ; Timer/Counter Interrupt Mask bit 1
+SFR290  = TOIE0,  I/O-SPACE, 0x37:0-0, 1, base(2) ; Timer/Counter Interrupt Mask bit 0
+
+
+; TIFR Bits
+
+SFR291  = OCF2,   I/O-SPACE, 0x36:7-7, 1, base(2) ; Timer/Counter Interrupt Flag bit 7
+SFR292  = TOV2,   I/O-SPACE, 0x36:6-6, 1, base(2) ; Timer/Counter Interrupt Flag bit 6
+SFR293  = ICF1,   I/O-SPACE, 0x36:5-5, 1, base(2) ; Timer/Counter Interrupt Flag bit 5
+SFR294  = OCF1A,  I/O-SPACE, 0x36:4-4, 1, base(2) ; Timer/Counter Interrupt Flag bit 4
+SFR295  = OCF1B,  I/O-SPACE, 0x36:3-3, 1, base(2) ; Timer/Counter Interrupt Flag bit 3
+SFR296  = TOV1,   I/O-SPACE, 0x36:2-2, 1, base(2) ; Timer/Counter Interrupt Flag bit 2
+SFR297  = OCF0,   I/O-SPACE, 0x36:1-1, 1, base(2) ; Timer/Counter Interrupt Flag bit 1
+SFR298  = TOV0,   I/O-SPACE, 0x36:0-0, 1, base(2) ; Timer/Counter Interrupt Flag bit 0
+
+
+; MCUCR Bits
+
+SFR299  = SRE,    I/O-SPACE, 0x35:7-7, 1, base(2) ; MCU general Control bit 7
+SFR300  = SRW10,  I/O-SPACE, 0x35:6-6, 1, base(2) ; MCU general Control bit 6
+SFR301  = SE,     I/O-SPACE, 0x35:5-5, 1, base(2) ; MCU general Control bit 5
+SFR302  = SM1,    I/O-SPACE, 0x35:4-4, 1, base(2) ; MCU general Control bit 4
+SFR303  = SM0,    I/O-SPACE, 0x35:3-3, 1, base(2) ; MCU general Control bit 3
+SFR304  = SM2,    I/O-SPACE, 0x35:2-2, 1, base(2) ; MCU general Control bit 2
+SFR305  = IVSEL,  I/O-SPACE, 0x35:1-1, 1, base(2) ; MCU general Control bit 1
+SFR306  = IVCE,   I/O-SPACE, 0x35:0-0, 1, base(2) ; MCU general Control bit 0
+
+
+; MCUCSR Bits
+
+SFR307  = JTD,    I/O-SPACE, 0x34:7-7, 1, base(2) ; MCU general Control and Status bit 7
+SFR308  = JTDR,   I/O-SPACE, 0x34:4-4, 1, base(2) ; MCU general Control and Status bit 4
+SFR309  = WDRF,   I/O-SPACE, 0x34:3-3, 1, base(2) ; MCU general Control and Status bit 3
+SFR310  = BORF,   I/O-SPACE, 0x34:2-2, 1, base(2) ; MCU general Control and Status bit 2
+SFR311  = EXTRF,  I/O-SPACE, 0x34:1-1, 1, base(2) ; MCU general Control and Status bit 1
+SFR312  = PORF,   I/O-SPACE, 0x34:0-0, 1, base(2) ; MCU general Control and Status bit 0
+   
+   
+; TCCR0 Bits
+
+SFR313  = FOC0,   I/O-SPACE, 0x33:7-7, 1, base(2) ; Timer/Counter 0 Control bit 7
+SFR314  = WGM00,  I/O-SPACE, 0x33:6-6, 1, base(2) ; Timer/Counter 0 Control bit 6
+SFR315  = COM01,  I/O-SPACE, 0x33:5-5, 1, base(2) ; Timer/Counter 0 Control bit 5
+SFR316  = COM00,  I/O-SPACE, 0x33:4-4, 1, base(2) ; Timer/Counter 0 Control bit 4
+SFR317  = WGM01,  I/O-SPACE, 0x33:3-3, 1, base(2) ; Timer/Counter 0 Control bit 3
+SFR318  = CS02,   I/O-SPACE, 0x33:2-2, 1, base(2) ; Timer/Counter 0 Control bit 2
+SFR319  = CS01,   I/O-SPACE, 0x33:1-1, 1, base(2) ; Timer/Counter 0 Control bit 1
+SFR320  = CS00,   I/O-SPACE, 0x33:0-0, 1, base(2) ; Timer/Counter 0 Control bit 0
+
+
+; ASSR Bits
+
+SFR321  = AS0,    I/O-SPACE, 0x30:3-3, 1, base(2) ; Asynchronous mode Status bit 3
+SFR322  = TCN0UB, I/O-SPACE, 0x30:2-2, 1, base(2) ; Asynchronous mode Status bit 2
+SFR323  = OCR0UB, I/O-SPACE, 0x30:1-1, 1, base(2) ; Asynchronous mode Status bit 1
+SFR324  = TCR0UB, I/O-SPACE, 0x30:0-0, 1, base(2) ; Asynchronous mode Status bit 0
+
+
+; TCCR1A Bits
+
+SFR325  = COM1A1, I/O-SPACE, 0x2F:7-7, 1, base(2) ; Timer/Counter 1 Control A bit 7
+SFR326  = COM1A0, I/O-SPACE, 0x2F:6-6, 1, base(2) ; Timer/Counter 1 Control A bit 6
+SFR327  = COM1B1, I/O-SPACE, 0x2F:5-5, 1, base(2) ; Timer/Counter 1 Control A bit 5
+SFR328  = COM1B0, I/O-SPACE, 0x2F:4-4, 1, base(2) ; Timer/Counter 1 Control A bit 4
+SFR329  = COM1C1, I/O-SPACE, 0x2F:3-3, 1, base(2) ; Timer/Counter 1 Control A bit 3
+SFR330  = COM1C0, I/O-SPACE, 0x2F:2-2, 1, base(2) ; Timer/Counter 1 Control A bit 2
+SFR331  = WGM11,  I/O-SPACE, 0x2F:1-1, 1, base(2) ; Timer/Counter 1 Control A bit 1
+SFR332  = WGM11,  I/O-SPACE, 0x2F:0-0, 1, base(2) ; Timer/Counter 1 Control A bit 0
+
+
+; TCCR1B Bits
+
+SFR333  = ICNC1,  I/O-SPACE, 0x2E:7-7, 1, base(2) ; Timer/Counter 1 Control B bit 7
+SFR334  = ICES1,  I/O-SPACE, 0x2E:6-6, 1, base(2) ; Timer/Counter 1 Control B bit 6
+SFR335  = WGM13,  I/O-SPACE, 0x2E:4-4, 1, base(2) ; Timer/Counter 1 Control B bit 4
+SFR336  = WGM12,  I/O-SPACE, 0x2E:3-3, 1, base(2) ; Timer/Counter 1 Control B bit 3
+SFR337  = CS12,   I/O-SPACE, 0x2E:2-2, 1, base(2) ; Timer/Counter 1 Control B bit 2
+SFR338  = CS11,   I/O-SPACE, 0x2E:1-1, 1, base(2) ; Timer/Counter 1 Control B bit 1
+SFR339  = CS10,   I/O-SPACE, 0x2E:0-0, 1, base(2) ; Timer/Counter 1 Control B bit 0
+   
+
+; TCCR2 Bits
+
+SFR340  = FOC2,   I/O-SPACE, 0x25:7-7, 1, base(2) ; Timer/Counter 2 Control bit 7
+SFR341  = WGM20,  I/O-SPACE, 0x25:6-6, 1, base(2) ; Timer/Counter 2 Control bit 6
+SFR342  = COM21,  I/O-SPACE, 0x25:5-5, 1, base(2) ; Timer/Counter 2 Control bit 5
+SFR343  = COM20,  I/O-SPACE, 0x25:4-4, 1, base(2) ; Timer/Counter 2 Control bit 4
+SFR344  = WGM21,  I/O-SPACE, 0x25:3-3, 1, base(2) ; Timer/Counter 2 Control bit 3
+SFR345  = CS22,   I/O-SPACE, 0x25:2-2, 1, base(2) ; Timer/Counter 2 Control bit 2
+SFR346  = CS21,   I/O-SPACE, 0x25:1-1, 1, base(2) ; Timer/Counter 2 Control bit 1
+SFR347  = CS20,   I/O-SPACE, 0x25:0-0, 1, base(2) ; Timer/Counter 2 Control bit 0
+
+
+; OCDR Bits
+
+SFR348  = IDRD,   I/O-SPACE, 0x22:7-7, 1, base(2) ; On-Chip Debug bit 7
+SFR349  = OCDR6,  I/O-SPACE, 0x22:6-6, 1, base(2) ; On-Chip Debug bit 6
+SFR350  = OCDR5,  I/O-SPACE, 0x22:5-5, 1, base(2) ; On-Chip Debug bit 5
+SFR351  = OCDR4,  I/O-SPACE, 0x22:4-4, 1, base(2) ; On-Chip Debug bit 4
+SFR352  = OCDR3,  I/O-SPACE, 0x22:3-3, 1, base(2) ; On-Chip Debug bit 3
+SFR353  = OCDR2,  I/O-SPACE, 0x22:2-2, 1, base(2) ; On-Chip Debug bit 2
+SFR354  = OCDR1,  I/O-SPACE, 0x22:1-1, 1, base(2) ; On-Chip Debug bit 1
+SFR355  = OCDR0,  I/O-SPACE, 0x22:0-0, 1, base(2) ; On-Chip Debug bit 0
+
+
+; WDTCR Bits
+
+SFR356  = WDCE,   I/O-SPACE, 0x21:4-4, 1, base(2) ; Watchdog Timer Control bit 4
+SFR357  = WDE,    I/O-SPACE, 0x21:3-3, 1, base(2) ; Watchdog Timer Control bit 3
+SFR358  = WDP2,   I/O-SPACE, 0x21:2-2, 1, base(2) ; Watchdog Timer Control bit 2
+SFR359  = WDP1,   I/O-SPACE, 0x21:1-1, 1, base(2) ; Watchdog Timer Control bit 1
+SFR360  = WDP0,   I/O-SPACE, 0x21:0-0, 1, base(2) ; Watchdog Timer Control bit 0
+
+
+; SFIOR Bits
+
+SFR361  = TSM,    I/O-SPACE, 0x20:7-7, 1, base(2) ; Special Function I/O bit 7
+SFR362  = ADHSM,  I/O-SPACE, 0x20:4-4, 1, base(2) ; Special Function I/O bit 4
+SFR363  = ACME,   I/O-SPACE, 0x20:3-3, 1, base(2) ; Special Function I/O bit 3
+SFR364  = PUD,    I/O-SPACE, 0x20:2-2, 1, base(2) ; Special Function I/O bit 2
+SFR365  = PSR0,   I/O-SPACE, 0x20:1-1, 1, base(2) ; Special Function I/O bit 1
+SFR366  = PSR321, I/O-SPACE, 0x20:0-0, 1, base(2) ; Special Function I/O bit 0
+   
+   
+; EECR Bits
+
+SFR367  = EERIE,  I/O-SPACE, 0x1C:3-3, 1, base(2) ; EEPROM Control bit 3
+SFR368  = EEMWE,  I/O-SPACE, 0x1C:2-2, 1, base(2) ; EEPROM Control bit 2
+SFR369  = EEWE,   I/O-SPACE, 0x1C:1-1, 1, base(2) ; EEPROM Control bit 1
+SFR370  = EERE,   I/O-SPACE, 0x1C:0-0, 1, base(2) ; EEPROM Control bit 0
+
+
+; PORTA bits
+
+SFR371  = PORTA7, I/O-SPACE, 0x1B:7-7, 1, base(2) ; Data Register bit 7
+SFR372  = PORTA6, I/O-SPACE, 0x1B:6-6, 1, base(2) ; Data Register bit 6
+SFR373  = PORTA5, I/O-SPACE, 0x1B:5-5, 1, base(2) ; Data Register bit 5
+SFR374  = PORTA4, I/O-SPACE, 0x1B:4-4, 1, base(2) ; Data Register bit 4
+SFR375  = PORTA3, I/O-SPACE, 0x1B:3-3, 1, base(2) ; Data Register bit 3
+SFR376  = PORTA2, I/O-SPACE, 0x1B:2-2, 1, base(2) ; Data Register bit 2
+SFR377  = PORTA1, I/O-SPACE, 0x1B:1-1, 1, base(2) ; Data Register bit 1
+SFR378  = PORTA0, I/O-SPACE, 0x1B:0-0, 1, base(2) ; Data Register bit 0
+SFR379  = DDRA7,  I/O-SPACE, 0x1A:7-7, 1, base(2) ; Data Direction bit 7
+SFR380  = DDRA6,  I/O-SPACE, 0x1A:6-6, 1, base(2) ; Data Direction bit 6
+SFR381  = DDRA5,  I/O-SPACE, 0x1A:5-5, 1, base(2) ; Data Direction bit 5
+SFR382  = DDRA4,  I/O-SPACE, 0x1A:4-4, 1, base(2) ; Data Direction bit 4
+SFR383  = DDRA3,  I/O-SPACE, 0x1A:3-3, 1, base(2) ; Data Direction bit 3
+SFR384  = DDRA2,  I/O-SPACE, 0x1A:2-2, 1, base(2) ; Data Direction bit 2
+SFR385  = DDRA1,  I/O-SPACE, 0x1A:1-1, 1, base(2) ; Data Direction bit 1
+SFR386  = DDRA0,  I/O-SPACE, 0x1A:0-0, 1, base(2) ; Data Direction bit 0
+SFR387  = PINA7,  I/O-SPACE, 0x19:7-7, 1, base(2) ; Input Pins bit 7
+SFR388  = PINA6,  I/O-SPACE, 0x19:6-6, 1, base(2) ; Input Pins bit 6
+SFR389  = PINA5,  I/O-SPACE, 0x19:5-5, 1, base(2) ; Input Pins bit 5
+SFR390  = PINA4,  I/O-SPACE, 0x19:4-4, 1, base(2) ; Input Pins bit 4
+SFR391  = PINA3,  I/O-SPACE, 0x19:3-3, 1, base(2) ; Input Pins bit 3
+SFR392  = PINA2,  I/O-SPACE, 0x19:2-2, 1, base(2) ; Input Pins bit 2
+SFR393  = PINA1,  I/O-SPACE, 0x19:1-1, 1, base(2) ; Input Pins bit 1
+SFR394  = PINA0,  I/O-SPACE, 0x19:0-0, 1, base(2) ; Input Pins bit 0
+
+
+; PORTB bits
+
+SFR395  = PORTB7, I/O-SPACE, 0x18:7-7, 1, base(2) ; Data Register bit 7
+SFR396  = PORTB6, I/O-SPACE, 0x18:6-6, 1, base(2) ; Data Register bit 6
+SFR397  = PORTB5, I/O-SPACE, 0x18:5-5, 1, base(2) ; Data Register bit 5
+SFR398  = PORTB4, I/O-SPACE, 0x18:4-4, 1, base(2) ; Data Register bit 4
+SFR399  = PORTB3, I/O-SPACE, 0x18:3-3, 1, base(2) ; Data Register bit 3
+SFR400  = PORTB2, I/O-SPACE, 0x18:2-2, 1, base(2) ; Data Register bit 2
+SFR401  = PORTB1, I/O-SPACE, 0x18:1-1, 1, base(2) ; Data Register bit 1
+SFR402  = PORTB0, I/O-SPACE, 0x18:0-0, 1, base(2) ; Data Register bit 0
+SFR403  = DDRB7,  I/O-SPACE, 0x17:7-7, 1, base(2) ; Data Direction bit 7
+SFR404  = DDRB6,  I/O-SPACE, 0x17:6-6, 1, base(2) ; Data Direction bit 6
+SFR405  = DDRB5,  I/O-SPACE, 0x17:5-5, 1, base(2) ; Data Direction bit 5
+SFR406  = DDRB4,  I/O-SPACE, 0x17:4-4, 1, base(2) ; Data Direction bit 4
+SFR407  = DDRB3,  I/O-SPACE, 0x17:3-3, 1, base(2) ; Data Direction bit 3
+SFR408  = DDRB2,  I/O-SPACE, 0x17:2-2, 1, base(2) ; Data Direction bit 2
+SFR409  = DDRB1,  I/O-SPACE, 0x17:1-1, 1, base(2) ; Data Direction bit 1
+SFR410  = DDRB0,  I/O-SPACE, 0x17:0-0, 1, base(2) ; Data Direction bit 0
+SFR411  = PINB7,  I/O-SPACE, 0x16:7-7, 1, base(2) ; Input Pins bit 7
+SFR412  = PINB6,  I/O-SPACE, 0x16:6-6, 1, base(2) ; Input Pins bit 6
+SFR413  = PINB5,  I/O-SPACE, 0x16:5-5, 1, base(2) ; Input Pins bit 5
+SFR414  = PINB4,  I/O-SPACE, 0x16:4-4, 1, base(2) ; Input Pins bit 4
+SFR415  = PINB3,  I/O-SPACE, 0x16:3-3, 1, base(2) ; Input Pins bit 3
+SFR416  = PINB2,  I/O-SPACE, 0x16:2-2, 1, base(2) ; Input Pins bit 2
+SFR417  = PINB1,  I/O-SPACE, 0x16:1-1, 1, base(2) ; Input Pins bit 1
+SFR418  = PINB0,  I/O-SPACE, 0x16:0-0, 1, base(2) ; Input Pins bit 0
+
+
+; PORTC bits
+
+SFR419  = PORTC7, I/O-SPACE, 0x15:7-7, 1, base(2) ; Data Register bit 7
+SFR420  = PORTC6, I/O-SPACE, 0x15:6-6, 1, base(2) ; Data Register bit 6
+SFR421  = PORTC5, I/O-SPACE, 0x15:5-5, 1, base(2) ; Data Register bit 5
+SFR422  = PORTC4, I/O-SPACE, 0x15:4-4, 1, base(2) ; Data Register bit 4
+SFR423  = PORTC3, I/O-SPACE, 0x15:3-3, 1, base(2) ; Data Register bit 3
+SFR424  = PORTC2, I/O-SPACE, 0x15:2-2, 1, base(2) ; Data Register bit 2
+SFR425  = PORTC1, I/O-SPACE, 0x15:1-1, 1, base(2) ; Data Register bit 1
+SFR426  = PORTC0, I/O-SPACE, 0x15:0-0, 1, base(2) ; Data Register bit 0
+SFR427  = DDRC7,  I/O-SPACE, 0x14:7-7, 1, base(2) ; Data Direction bit 7
+SFR428  = DDRC6,  I/O-SPACE, 0x14:6-6, 1, base(2) ; Data Direction bit 6
+SFR429  = DDRC5,  I/O-SPACE, 0x14:5-5, 1, base(2) ; Data Direction bit 5
+SFR430  = DDRC4,  I/O-SPACE, 0x14:4-4, 1, base(2) ; Data Direction bit 4
+SFR431  = DDRC3,  I/O-SPACE, 0x14:3-3, 1, base(2) ; Data Direction bit 3
+SFR432  = DDRC2,  I/O-SPACE, 0x14:2-2, 1, base(2) ; Data Direction bit 2
+SFR433  = DDRC1,  I/O-SPACE, 0x14:1-1, 1, base(2) ; Data Direction bit 1
+SFR434  = DDRC0,  I/O-SPACE, 0x14:0-0, 1, base(2) ; Data Direction bit 0
+SFR435  = PINC7,  I/O-SPACE, 0x13:7-7, 1, base(2) ; Input Pins bit 7
+SFR436  = PINC6,  I/O-SPACE, 0x13:6-6, 1, base(2) ; Input Pins bit 6
+SFR437  = PINC5,  I/O-SPACE, 0x13:5-5, 1, base(2) ; Input Pins bit 5
+SFR438  = PINC4,  I/O-SPACE, 0x13:4-4, 1, base(2) ; Input Pins bit 4
+SFR439  = PINC3,  I/O-SPACE, 0x13:3-3, 1, base(2) ; Input Pins bit 3
+SFR440  = PINC2,  I/O-SPACE, 0x13:2-2, 1, base(2) ; Input Pins bit 2
+SFR441  = PINC1,  I/O-SPACE, 0x13:1-1, 1, base(2) ; Input Pins bit 1
+SFR442  = PINC0,  I/O-SPACE, 0x13:0-0, 1, base(2) ; Input Pins bit 0
+
+
+; PORTD bits
+
+SFR443  = PORTD7, I/O-SPACE, 0x12:7-7, 1, base(2) ; Data Register bit 7
+SFR444  = PORTD6, I/O-SPACE, 0x12:6-6, 1, base(2) ; Data Register bit 6
+SFR445  = PORTD5, I/O-SPACE, 0x12:5-5, 1, base(2) ; Data Register bit 5
+SFR446  = PORTD4, I/O-SPACE, 0x12:4-4, 1, base(2) ; Data Register bit 4
+SFR447  = PORTD3, I/O-SPACE, 0x12:3-3, 1, base(2) ; Data Register bit 3
+SFR448  = PORTD2, I/O-SPACE, 0x12:2-2, 1, base(2) ; Data Register bit 2
+SFR449  = PORTD1, I/O-SPACE, 0x12:1-1, 1, base(2) ; Data Register bit 1
+SFR450  = PORTD0, I/O-SPACE, 0x12:0-0, 1, base(2) ; Data Register bit 0
+SFR451  = DDRD7,  I/O-SPACE, 0x11:7-7, 1, base(2) ; Data Direction bit 7
+SFR452  = DDRD6,  I/O-SPACE, 0x11:6-6, 1, base(2) ; Data Direction bit 6
+SFR453  = DDRD5,  I/O-SPACE, 0x11:5-5, 1, base(2) ; Data Direction bit 5
+SFR454  = DDRD4,  I/O-SPACE, 0x11:4-4, 1, base(2) ; Data Direction bit 4
+SFR455  = DDRD3,  I/O-SPACE, 0x11:3-3, 1, base(2) ; Data Direction bit 3
+SFR456  = DDRD2,  I/O-SPACE, 0x11:2-2, 1, base(2) ; Data Direction bit 2
+SFR457  = DDRD1,  I/O-SPACE, 0x11:1-1, 1, base(2) ; Data Direction bit 1
+SFR458  = DDRD0,  I/O-SPACE, 0x11:0-0, 1, base(2) ; Data Direction bit 0
+SFR459  = PIND7,  I/O-SPACE, 0x10:7-7, 1, base(2) ; Input Pins bit 7
+SFR460  = PIND6,  I/O-SPACE, 0x10:6-6, 1, base(2) ; Input Pins bit 6
+SFR461  = PIND5,  I/O-SPACE, 0x10:5-5, 1, base(2) ; Input Pins bit 5
+SFR462  = PIND4,  I/O-SPACE, 0x10:4-4, 1, base(2) ; Input Pins bit 4
+SFR463  = PIND3,  I/O-SPACE, 0x10:3-3, 1, base(2) ; Input Pins bit 3
+SFR464  = PIND2,  I/O-SPACE, 0x10:2-2, 1, base(2) ; Input Pins bit 2
+SFR465  = PIND1,  I/O-SPACE, 0x10:1-1, 1, base(2) ; Input Pins bit 1
+SFR466  = PIND0,  I/O-SPACE, 0x10:0-0, 1, base(2) ; Input Pins bit 0
+
+
+; SPSR bits
+
+SFR467  = SPIF,   I/O-SPACE, 0x0E:7-7, 1, base(2) ; SPI Status bit 7
+SFR468  = WCOL,   I/O-SPACE, 0x0E:6-6, 1, base(2) ; SPI Status bit 6
+SFR469  = SPI2X,  I/O-SPACE, 0x0E:0-0, 1, base(2) ; SPI Status bit 0
+
+
+; SPCR bits
+
+SFR470  = SPIE,   I/O-SPACE, 0x0D:7-7, 1, base(2) ; SPI Control bit 7
+SFR471  = SPE,    I/O-SPACE, 0x0D:6-6, 1, base(2) ; SPI Control bit 6
+SFR472  = DORD,   I/O-SPACE, 0x0D:5-5, 1, base(2) ; SPI Control bit 5
+SFR473  = MSTR,   I/O-SPACE, 0x0D:4-4, 1, base(2) ; SPI Control bit 4
+SFR474  = CPOL,   I/O-SPACE, 0x0D:3-3, 1, base(2) ; SPI Control bit 3
+SFR475  = CPHA,   I/O-SPACE, 0x0D:2-2, 1, base(2) ; SPI Control bit 2
+SFR476  = SPR1,   I/O-SPACE, 0x0D:1-1, 1, base(2) ; SPI Control bit 1
+SFR477  = SPR0,   I/O-SPACE, 0x0D:0-0, 1, base(2) ; SPI Control bit 0
+
+
+; UCSR0A Bits
+
+SFR478  = RXC0,   I/O-SPACE, 0x0B:7-7, 1, base(2) ; USART 0 Control and Status A bit 7
+SFR479  = TXC0,   I/O-SPACE, 0x0B:6-6, 1, base(2) ; USART 0 Control and Status A bit 6
+SFR480  = UDRE0,  I/O-SPACE, 0x0B:5-5, 1, base(2) ; USART 0 Control and Status A bit 5
+SFR481  = FE0,    I/O-SPACE, 0x0B:4-4, 1, base(2) ; USART 0 Control and Status A bit 4
+SFR482  = DOR0,   I/O-SPACE, 0x0B:3-3, 1, base(2) ; USART 0 Control and Status A bit 3
+SFR483  = PE0,    I/O-SPACE, 0x0B:2-2, 1, base(2) ; USART 0 Control and Status A bit 2
+SFR484  = U2X0,   I/O-SPACE, 0x0B:1-1, 1, base(2) ; USART 0 Control and Status A bit 1 
+SFR485  = MPCM0,  I/O-SPACE, 0x0B:0-0, 1, base(2) ; USART 0 Control and Status A bit 0 
+
+
+; UCSR0B Bits
+
+SFR486  = RXCIE0, I/O-SPACE, 0x0A:7-7, 1, base(2) ; USART 0 Control and Status B bit 7
+SFR487  = TXCIE0, I/O-SPACE, 0x0A:6-6, 1, base(2) ; USART 0 Control and Status B bit 6
+SFR488  = UDRIE0, I/O-SPACE, 0x0A:5-5, 1, base(2) ; USART 0 Control and Status B bit 5
+SFR489  = RXEN0,  I/O-SPACE, 0x0A:4-4, 1, base(2) ; USART 0 Control and Status B bit 4
+SFR490  = TXEN0,  I/O-SPACE, 0x0A:3-3, 1, base(2) ; USART 0 Control and Status B bit 3
+SFR491  = UCSZ02, I/O-SPACE, 0x0A:2-2, 1, base(2) ; USART 0 Control and Status B bit 2
+SFR492  = RXB80,  I/O-SPACE, 0x0A:1-1, 1, base(2) ; USART 0 Control and Status B bit 1 
+SFR493  = TXB80,  I/O-SPACE, 0x0A:0-0, 1, base(2) ; USART 0 Control and Status B bit 0 
+
+
+; ACSR Bits
+
+SFR494  = ACD,    I/O-SPACE, 0x08:7-7, 1, base(2) ; Analog Comparator Control and Status bit 7
+SFR495  = ACBG,   I/O-SPACE, 0x08:6-6, 1, base(2) ; Analog Comparator Control and Status bit 6
+SFR496  = ACO,    I/O-SPACE, 0x08:5-5, 1, base(2) ; Analog Comparator Control and Status bit 5
+SFR497  = ACI,    I/O-SPACE, 0x08:4-4, 1, base(2) ; Analog Comparator Control and Status bit 4
+SFR498  = ACIE,   I/O-SPACE, 0x08:3-3, 1, base(2) ; Analog Comparator Control and Status bit 3
+SFR499  = ACIC,   I/O-SPACE, 0x08:2-2, 1, base(2) ; Analog Comparator Control and Status bit 2
+SFR500  = ACIS1,  I/O-SPACE, 0x08:1-1, 1, base(2) ; Analog Comparator Control and Status bit 1 
+SFR501  = ACIS0,  I/O-SPACE, 0x08:0-0, 1, base(2) ; Analog Comparator Control and Status bit 0 
+
+
+; ADMUX Bits
+
+SFR502  = REFS1,  I/O-SPACE, 0x07:7-7, 1, base(2) ; ADC Multiplexer Selection bit 7
+SFR503  = REFS0,  I/O-SPACE, 0x07:6-6, 1, base(2) ; ADC Multiplexer Selection bit 6
+SFR504  = ADLAR,  I/O-SPACE, 0x07:5-5, 1, base(2) ; ADC Multiplexer Selection bit 5
+SFR505  = MUX4,   I/O-SPACE, 0x07:4-4, 1, base(2) ; ADC Multiplexer Selection bit 4
+SFR506  = MUX3,   I/O-SPACE, 0x07:3-3, 1, base(2) ; ADC Multiplexer Selection bit 3
+SFR507  = MUX2,   I/O-SPACE, 0x07:2-2, 1, base(2) ; ADC Multiplexer Selection bit 2
+SFR508  = MUX1,   I/O-SPACE, 0x07:1-1, 1, base(2) ; ADC Multiplexer Selection bit 1 
+SFR509  = MUX0,   I/O-SPACE, 0x07:0-0, 1, base(2) ; ADC Multiplexer Selection bit 0
+
+
+; ADCSR Bits
+
+SFR510  = ADEN,   I/O-SPACE, 0x06:7-7, 1, base(2) ; ADC Control and Status bit 7
+SFR511  = ADSC,   I/O-SPACE, 0x06:6-6, 1, base(2) ; ADC Control and Status bit 6
+SFR512  = ADRF,   I/O-SPACE, 0x06:5-5, 1, base(2) ; ADC Control and Status bit 5
+SFR513  = ADIF,   I/O-SPACE, 0x06:4-4, 1, base(2) ; ADC Control and Status bit 4
+SFR514  = ADIE,   I/O-SPACE, 0x06:3-3, 1, base(2) ; ADC Control and Status bit 3
+SFR515  = ADPS2,  I/O-SPACE, 0x06:2-2, 1, base(2) ; ADC Control and Status bit 2
+SFR516  = ADPS1,  I/O-SPACE, 0x06:1-1, 1, base(2) ; ADC Control and Status bit 1 
+SFR517  = ADPS0,  I/O-SPACE, 0x06:0-0, 1, base(2) ; ADC Control and Status bit 0
+
+
+; PORTE bits
+
+SFR518  = PORTE7, I/O-SPACE, 0x03:7-7, 1, base(2) ; Data Register bit 7
+SFR519  = PORTE6, I/O-SPACE, 0x03:6-6, 1, base(2) ; Data Register bit 6
+SFR520  = PORTE5, I/O-SPACE, 0x03:5-5, 1, base(2) ; Data Register bit 5
+SFR521  = PORTE4, I/O-SPACE, 0x03:4-4, 1, base(2) ; Data Register bit 4
+SFR522  = PORTE3, I/O-SPACE, 0x03:3-3, 1, base(2) ; Data Register bit 3
+SFR523  = PORTE2, I/O-SPACE, 0x03:2-2, 1, base(2) ; Data Register bit 2
+SFR524  = PORTE1, I/O-SPACE, 0x03:1-1, 1, base(2) ; Data Register bit 1
+SFR525  = PORTE0, I/O-SPACE, 0x03:0-0, 1, base(2) ; Data Register bit 0
+SFR526  = DDRE7,  I/O-SPACE, 0x02:7-7, 1, base(2) ; Data Direction bit 7
+SFR527  = DDRE6,  I/O-SPACE, 0x02:6-6, 1, base(2) ; Data Direction bit 6
+SFR528  = DDRE5,  I/O-SPACE, 0x02:5-5, 1, base(2) ; Data Direction bit 5
+SFR529  = DDRE4,  I/O-SPACE, 0x02:4-4, 1, base(2) ; Data Direction bit 4
+SFR530  = DDRE3,  I/O-SPACE, 0x02:3-3, 1, base(2) ; Data Direction bit 3
+SFR531  = DDRE2,  I/O-SPACE, 0x02:2-2, 1, base(2) ; Data Direction bit 2
+SFR532  = DDRE1,  I/O-SPACE, 0x02:1-1, 1, base(2) ; Data Direction bit 1
+SFR533  = DDRE0,  I/O-SPACE, 0x02:0-0, 1, base(2) ; Data Direction bit 0
+SFR534  = PINE7,  I/O-SPACE, 0x01:7-7, 1, base(2) ; Input Pins bit 7
+SFR535  = PINE6,  I/O-SPACE, 0x01:6-6, 1, base(2) ; Input Pins bit 6
+SFR536  = PINE5,  I/O-SPACE, 0x01:5-5, 1, base(2) ; Input Pins bit 5
+SFR537  = PINE4,  I/O-SPACE, 0x01:4-4, 1, base(2) ; Input Pins bit 4
+SFR538  = PINE3,  I/O-SPACE, 0x01:3-3, 1, base(2) ; Input Pins bit 3
+SFR539  = PINE2,  I/O-SPACE, 0x01:2-2, 1, base(2) ; Input Pins bit 2
+SFR540  = PINE1,  I/O-SPACE, 0x01:1-1, 1, base(2) ; Input Pins bit 1
+SFR541  = PINE0,  I/O-SPACE, 0x01:0-0, 1, base(2) ; Input Pins bit 0
+
+
+; PINF Bits
+
+SFR542  = PINF7,  I/O-SPACE, 0x00:7-7, 1, base(2) ; Input Pins bit 7
+SFR543  = PINF6,  I/O-SPACE, 0x00:6-6, 1, base(2) ; Input Pins bit 6
+SFR544  = PINF5,  I/O-SPACE, 0x00:5-5, 1, base(2) ; Input Pins bit 5
+SFR545  = PINF4,  I/O-SPACE, 0x00:4-4, 1, base(2) ; Input Pins bit 4
+SFR546  = PINF3,  I/O-SPACE, 0x00:3-3, 1, base(2) ; Input Pins bit 3
+SFR547  = PINF2,  I/O-SPACE, 0x00:2-2, 1, base(2) ; Input Pins bit 2
+SFR548  = PINF1,  I/O-SPACE, 0x00:1-1, 1, base(2) ; Input Pins bit 1
+SFR549  = PINF0,  I/O-SPACE, 0x00:0-0, 1, base(2) ; Input Pins bit 0
+
+
+			      
+[SfrGroupInfo]
+Group0    = Overview, UCSR1C, UDR1, UCSR1A, UCSR1B, UBRR1L, UBRR1H, UCSR0C, UBRR0H
+Group0:1  = TCCR3C, TCCR3A, TCCR3B, TCNT3, OCR3A, OCR3B, OCR3C, ICR3, ETIMSK, ETIFR 
+Group0:2  = TCCR1C, OCR1C, TWCR, TWDR, TWAR, TWSR, TWBR, OSCCAL, XMCRA, XMCRB
+Group0:3  = EICRA, SPMCSR, PORTG, DDRG, PING, PORTF, DDRF     
+Group0:4  = SREG, SP, XDIV, RAMPZ, EICRB, EIMSK, EIFR, TIMSK, TIFR, MCUCR, MCUCSR, TCCR0
+Group0:5  = TCNT0, OCR0, ASSR, TCCR1A, TCCR1B, TCNT1, OCR1A, OCR1B, ICR1, TCCR2, TCNT2
+Group0:6  = OCR2, OCDR, WDTCR, SFIOR, EEAR, EEDR, EECR, PORTA, DDRA, PINA, PORTB, DDRB
+Group0:7  = PINB, PORTC, DDRC, PINC, PORTD, DDRD, PIND, SPDR, SPSR, SPCR, UDR0, UCSR0A 
+Group0:8  = UCSR0B, UBRR0L, ACSR, ADMUX, ADCSR, ADC, PORTE, DDRE, PINE, PINF 
+
+Group1    = SREG, I-Flag, T-Flag, H-Flag, S-Flag, V-Flag, N-Flag, Z-Flag, C-Flag
+
+Group2    = SP, SP15, SP14, SP13, SP12, SP11, SP10, SP9, SP8, SP7, SP6, SP5, SP4, SP3, SP2, SP1, SP0
+
+Group3    = XDIV, XDIVEN, XDIV6, XDIV5, XDIV4, XDIV3, XDIV2, XDIV1, XDIV0
+
+Group4    = OCDR, IDRD, OCDR6, OCDR5, OCDR4, OCDR3, OCDR2, OCDR1, OCDR0
+
+Group5    = RAMPZ, RAMPZ0
+
+Group6    = XMCR, SRL2, SRL1, SRL0, SRW01, SRW00, SRW11
+Group6:1  = XMM2, XMM1, XMM0
+
+Group7    = MCUCR, SE, SM2, SM1, SM0, ISC11, ISC10, ISC01, ISC00
+
+Group8    = MCUCSR, JTD, JTDR, WDRF, BORF, EXTRF, PORF
+
+Group9    = SFIOR, TSM, ADHSM, ACME, PUD, PSR0, PSR321
+
+Group10   = SPMCSR, SPMIE, RWWSB, RWWSRE, BLBSET, PGWRT, PGERS, SPMEN
+
+Group11   = EICR, ISC31, ISC30, ISC21, ISC20, ISC11, ISC10, ISC01, ISC00 
+Group11:1 = ISC71, ISC70, ISC61, ISC60, ISC51, ISC50, ISC41, ISC40
+
+Group12   = EIMSK, INT7, INT6, INT5, INT4, INT3, INT2, INT1, INT0
+
+Group13   = EIFR, INTF7, INTF6, INTF5, INTF4, INTF3, INTF2, INTF1, INTF0
+
+Group14   = TIMSK, OCIE2, TOIE2, TICIE1, OCIE1A, OCIE1B, TOIE1, OCIE0, TOIE0
+
+Group15   = TIFR, OCF2, TOV2, ICF1, OCF1A, OCF1B, TOV1, OCF0, TOV0
+
+Group16   = ETIMSK, TICIE3, OCIE3A, OCIE3B, TOIE3, OCIE3C, OCIE1C
+ 
+Group17   = ETIFR, ICF3, OCF3A, OCF3B, TOV3, OCF3C, OCF1C
+
+Group18   = Watchdog, WDCE, WDE, WDP2, WDP1, WDP0
+
+Group19   = ASSR, AS0, TCN0UB, OCR0UB, TCR0UB
+
+Group20   = Timer/Counter 0, TCNT0, OCR0, FOC0, WGM00, COM01, COM00, WGM01, CS02, CS01, CS00
+
+Group21   = Timer/Counter 1, TCNT1, OCR1A, OCR1B, OCR1C, ICR1
+Group21:1 = COM1A1, COM1A0, COM1B1, COM1B0, COM1C1, COM1C0, WGM11, WGM11
+Group21:2 = ICNC1, ICES1, WGM13, WGM12, CS12, CS11, CS10
+Group21:3 = FOC1A, FOC1B, FOC1C 
+
+Group22   = Timer/Counter 2, TCNT2, OCR2
+Group22:1 = FOC2, WGM20, COM21, COM20, WGM21, CS22, CS21, CS20 
+
+Group23   = Timer/Counter 3, TCNT3, OCR3A, OCR3B, OCR3C, ICR3
+Group23:1 = COM3A1, COM3A0, COM3B1, COM3B0, COM3C1, COM3C0, WGM31, WGM30
+Group23:2 = ICNC3, ICES3, WGM33, WGM32, CS32, CS31, CS30
+Group23:3 = FOC3A, FOC3B, FOC3C
+
+Group24   = EEPROM, EEDR, EEAR
+Group24:1 = EERIE, EEMWE, EEWE, EERE
+
+Group25   = UART I/O, UDR0, UBRR0H, UBRR0L
+Group25:1 = RXC0, TXC0, UDRE0, FE0, DOR0, PE0, U2X0, MPCM0
+Group25:2 = RXCIE0, TXCIE0, UDRIE0, RXEN0, TXEN0, UCSZ02, RXB80, TXB80
+Group25:3 = UMSEL0, UPM01, UPM00, USBS0, UCSZ01, UCSZ00, UCPOL0
+
+Group26   = UART I/O 1, UDR1, UBRR1H, UBRR1L
+Group26:1 = RXC1, TXC1, UDRE1, FE1, DOR1, PE1, U2X1, MPCM1
+Group26:2 = RXCIE1, TXCIE1, UDRIE1, RXEN1, TXEN1, UCSZ12, RXB81, TXB81
+Group26:3 = UMSEL1, UPM11, UPM10, USBS1, UCSZ11, UCSZ10, UCPOL1
+
+Group27   = TWI, TWDR, TWBR
+Group27:1 = TWA6, TWA5, TWA4, TWA3, TWA2, TWA1, TWA0, TWGCE
+Group27:2 = TWINT, TWEA, TWSTA, TWSTO, TWWC, TWEN, TWIE
+Group27:3 = TWS7, TWS6, TWS5, TWS4, TWS3, TWPS1, TWPS0
+
+Group28   = SPI, SPDR, SPIF, WCOL, SPI2X
+Group28:1 = SPIE, SPE, DORD, MSTR, CPOL, CPHA, SPR1, SPR0
+
+Group29   = A/D, ADC
+Group29:1 = ADEN, ADSC, ADRF, ADIF, ADIE, ADPS2, ADPS1, ADPS0
+Group29:1 = REFS1, REFS0, ADLAR, MUX4, MUX3, MUX2, MUX1, MUX0
+
+Group30   = Analog Comp, ACD, ACBG, ACO, ACI, ACIE, ACIC, ACIS1, ACIS0
+
+Group31   = PORTA, PORTA7, PORTA6, PORTA5, PORTA4, PORTA3, PORTA2, PORTA1, PORTA0
+Group31:1 = DDRA7, DDRA6, DDRA5, DDRA4, DDRA3, DDRA2, DDRA1, DDRA0
+Group31:2 = PINA7, PINA6, PINA5, PINA4, PINA3, PINA2, PINA1, PINA0 
+
+Group32   = PORTB, PORTB7, PORTB6, PORTB5, PORTB4, PORTB3, PORTB2, PORTB1, PORTB0
+Group32:1 = DDRB7, DDRB6, DDRB5, DDRB4, DDRB3, DDRB2, DDRB1, DDRB0
+Group32:2 = PINB7, PINB6, PINB5, PINB4, PINB3, PINB2, PINB1, PINB0 
+
+Group33   = PORTC, PORTC7, PORTC6, PORTC5, PORTC4, PORTC3, PORTC2, PORTC1, PORTC0
+Group33:1 = DDRC7, DDRC6, DDRC5, DDRC4, DDRC3, DDRC2, DDRC1, DDRC0
+Group33:2 = PINC7, PINC6, PINC5, PINC4, PINC3, PINC2, PINC1, PINC0 
+
+Group34   = PORTD, PORTD7, PORTD6, PORTD5, PORTD4, PORTD3, PORTD2, PORTD1, PORTD0
+Group34:1 = DDRD7, DDRD6, DDRD5, DDRD4, DDRD3, DDRD2, DDRD1, DDRD0
+Group34:2 = PIND7, PIND6, PIND5, PIND4, PIND3, PIND2, PIND1, PIND0 
+
+Group35   = PORTE, PORTE7, PORTE6, PORTE5, PORTE4, PORTE3, PORTE2, PORTE1, PORTE0
+Group35:1 = DDRE7, DDRE6, DDRE5, DDRE4, DDRE3, DDRE2, DDRE1, DDRE0
+Group35:2 = PINE7, PINE6, PINE5, PINE4, PINE3, PINE2, PINE1, PINE0 
+
+Group36   = PORTF, PORTF7, PORTF6, PORTF5, PORTF4, PORTF3, PORTF2, PORTF1, PORTF0
+Group36:1 = DDRF7, DDRF6, DDRF5, DDRF4, DDRF3, DDRF2, DDRF1, DDRF0
+Group36:2 = PINF7, PINF6, PINF5, PINF4, PINF3, PINF2, PINF1, PINF0 
+
+Group37   = PORTG, PORTG2, PORTG1, PORTG0
+Group37:1 = DDRG2, DDRG1, DDRG0
+Group37:2 = PING2, PING1, PING0
+
+
+
+; Inerrupt Vectors
+
+[Vector]
+Vector0   = RESET
+Vector1   = INT0
+Vector2   = INT1
+Vector3   = INT2
+Vector4   = INT3
+Vector5   = INT4
+Vector6   = INT5
+Vector7   = INT6
+Vector8   = INT7
+Vector9   = TIMER2 COMP
+Vector10  = TIMER2 OVF
+Vector11  = TIMER1 CAPT
+Vector12  = TIMER1 COMPA
+Vector13  = TIMER1 COMPB
+Vector14  = TIMER1 OVF
+Vector15  = TIMER0 COMP
+Vector16  = TIMER0 OVF
+Vector17  = SPI STC
+Vector18  = USART0 RXC
+Vector19  = USART0 UDRE
+Vector20  = USART0 TXC
+Vector21  = ADC
+Vector22  = EE READY
+Vector23  = ANA COMP
+Vector24  = TIMER1 COMPC
+Vector25  = TIMER3 CAPT
+Vector26  = TIMER3 COMPA
+Vector27  = TIMER3 COMPB
+Vector28  = TIMER3 COMPC
+Vector29  = TIMER3 OVF
+Vector30  = USART1 RXC
+Vector31  = USART1 UDRE
+Vector32  = USART1 TXC
+Vector33  = TWSI
+Vector34  = SPM READY

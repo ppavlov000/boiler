@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1095512020</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\functions.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\iflash.pbi</file>
+      <file>$PROJ_DIR$\RS485_Slave\uart_functions.c</file>
+      <file>$PROJ_DIR$\pinout.h</file>
+      <file>$PROJ_DIR$\spm.asm</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\RS485_Slave\uart_protocol.c</file>
+      <file>$PROJ_DIR$\Include\crc.c</file>
+      <file>$PROJ_DIR$\iflash.c</file>
+      <file>$PROJ_DIR$\str.c</file>
+      <file>$PROJ_DIR$\timer16.c</file>
+      <file>$PROJ_DIR$\str.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.pbi</file>
+      <file>$PROJ_DIR$\Include\header.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_functions.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.r90</file>
+      <file>$PROJ_DIR$\iflash.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\spm.r90</file>
+      <file>$PROJ_DIR$\Debug\List\1.map</file>
+      <file>$PROJ_DIR$\Include\crc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_functions.pbi</file>
+      <file>$PROJ_DIR$\timer16.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$PROJ_DIR$\Include\types.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\1.hex</file>
+      <file>$TOOLKIT_DIR$\inc\iom128.h</file>
+      <file>$PROJ_DIR$\Include\defines.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.r90</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_protocol.pbi</file>
+      <file>$PROJ_DIR$\plm.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$PROJ_DIR$\RS485_Slave\uart_exchange.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.r90</file>
+      <file>$PROJ_DIR$\RS485_Slave\uart_misc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_protocol.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\mb.xcl</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.r90</file>
+      <file>$PROJ_DIR$\spm.h</file>
+      <file>$PROJ_DIR$\Debug\List\functions.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\boot_panel_RS485.pbd</file>
+      <file>$PROJ_DIR$\Debug\List\functions.s90</file>
+      <file>$PROJ_DIR$\RS485_Slave\uart_protocol.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\iflash.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.pbi</file>
+      <file>$PROJ_DIR$\functions.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19 28</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\functions.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 32 49 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50 3 29 25 37 23</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50 3 29 25 37 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RS485_Slave\uart_functions.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\spm.asm</name>
+      <outputs>
+        <tool>
+          <name>AAVR</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RS485_Slave\uart_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Include\crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\iflash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\str.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 36 11 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\timer16.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 26 53 46 27 36 22 16 35 11 20 13 30 38 40 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\1.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 43 39 32 51 31 18 45 15 14 41 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\boot_panel_RS485.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 24 17 1 42 52 12 21 34</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

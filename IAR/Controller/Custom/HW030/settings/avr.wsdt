@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>avr/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>208</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>916</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+    <Find-in-Files><ColumnWidth0>540</ColumnWidth0><ColumnWidth1>47</ColumnWidth1><ColumnWidth2>754</ColumnWidth2></Find-in-Files><TerminalIO/><CodeCoveragePlugin/></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-11243-21756</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>avr</ExpandedNode><ExpandedNode>avr/IO</ExpandedNode><ExpandedNode>avr/Interpretator</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-20821-26080</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-28066-7287</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\defines.h</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>226</SelStart><SelEnd>226</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\main.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>569</SelStart><SelEnd>569</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\RS485_Slave\uart_functions.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\RS485_Slave\uart_protocol.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\Custom\HW030\Hardware\functions.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>292</SelStart><SelEnd>292</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\RS485_Slave\uart_protocol.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>173</SelStart><SelEnd>173</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\Custom\HW030\Hardware\pinout.h</Filename><XPos>0</XPos><YPos>89</YPos><SelStart>2520</SelStart><SelEnd>2520</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\Custom\HW030\LCD_Menu\menu.c</Filename><XPos>0</XPos><YPos>135</YPos><SelStart>5985</SelStart><SelEnd>5985</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\Pid\pid.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Projects\Ura\Controller\Bcb\Controller\System\Pid\pid.c</Filename><XPos>0</XPos><YPos>49</YPos><SelStart>1664</SelStart><SelEnd>1664</SelEnd></Tab><ActiveTab>9</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-0088e8b8><key>iaridepm.enu1</key></Toolbar-0088e8b8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>443</Bottom><Right>282</Right><x>-2</x><y>-2</y><xscreen>184</xscreen><yscreen>200</yscreen><sizeHorzCX>155405</sizeHorzCX><sizeHorzCY>262467</sizeHorzCY><sizeVertCX>239865</sizeVertCX><sizeVertCY>583990</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>275</Bottom><Right>1186</Right><x>-2</x><y>-2</y><xscreen>1188</xscreen><yscreen>277</yscreen><sizeHorzCX>1003378</sizeHorzCX><sizeHorzCY>363517</sizeHorzCY><sizeVertCX>155405</sizeVertCX><sizeVertCY>262467</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

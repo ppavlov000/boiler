@@ -1,0 +1,2 @@
+bin_boot.exe -f ..\Debug\Exe\TP_Pritochka.a90 -o sys.bin -r -i "Clean PRJ Pritochka" -u 1 -h 0x02000013 -s 0x02000013
+bin_boot.exe -f ..\..\..\..\System\Pictures\pack.bin -o pict.bin -r -i "Clean PRJ Pictures" -u 1 -h 0x02000013 -s 0x02000013

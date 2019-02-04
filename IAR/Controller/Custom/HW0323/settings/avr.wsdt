@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>avr/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>194</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>916</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+    <Find-in-Files><ColumnWidth0>540</ColumnWidth0><ColumnWidth1>47</ColumnWidth1><ColumnWidth2>754</ColumnWidth2></Find-in-Files><TerminalIO/><CodeCoveragePlugin/></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-11243-21756</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>avr</ExpandedNode><ExpandedNode>avr/Compiler</ExpandedNode><ExpandedNode>avr/Custom</ExpandedNode><ExpandedNode>avr/Interpretator</ExpandedNode><ExpandedNode>avr/RS485_Slave</ExpandedNode><ExpandedNode>avr/main.c</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-20821-26080</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-28066-7287</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\Custom\HW0323\Custom\fancoil.c</Filename><XPos>0</XPos><YPos>152</YPos><SelStart>6774</SelStart><SelEnd>6774</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\controller_data_define.h</Filename><XPos>0</XPos><YPos>180</YPos><SelStart>5391</SelStart><SelEnd>5391</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\main.c</Filename><XPos>0</XPos><YPos>233</YPos><SelStart>6559</SelStart><SelEnd>6559</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\define.h</Filename><XPos>0</XPos><YPos>40</YPos><SelStart>733</SelStart><SelEnd>755</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\Custom\HW0323\LCD_Menu\menu.c</Filename><XPos>0</XPos><YPos>366</YPos><SelStart>11081</SelStart><SelEnd>11096</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\defines.h</Filename><XPos>0</XPos><YPos>295</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\main.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>250</SelStart><SelEnd>419</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\RS485_Slave\RS485_S_functions.c</Filename><XPos>0</XPos><YPos>425</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\Timer\timer16.c</Filename><XPos>0</XPos><YPos>51</YPos><SelStart>1740</SelStart><SelEnd>1740</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\Compiler\compiler.c</Filename><XPos>0</XPos><YPos>154</YPos><SelStart>6487</SelStart><SelEnd>6487</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20090804_Lednoe\IAR\Controller\System\Compiler\Compiler.h</Filename><XPos>0</XPos><YPos>32</YPos><SelStart>1432</SelStart><SelEnd>1432</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20100322_Clean\IAR\Controller\Custom\HW0323\Custom\custom.c</Filename><XPos>0</XPos><YPos>81</YPos><SelStart>2940</SelStart><SelEnd>2940</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20100322_Clean\IAR\Controller\System\controller_data_define.h</Filename><XPos>0</XPos><YPos>40</YPos><SelStart>5268</SelStart><SelEnd>5268</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20100322_Clean\IAR\Controller\System\RS485_Slave\RS485_S_protocol.c</Filename><XPos>0</XPos><YPos>203</YPos><SelStart>5829</SelStart><SelEnd>5829</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>W:\Ura\Projects\20100322_Clean\IAR\Controller\System\RS485_Slave\RS485_S_functions.c</Filename><XPos>0</XPos><YPos>382</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><ActiveTab>14</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01298f28><key>iaridepm.enu1</key></Toolbar-01298f28></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>510</Bottom><Right>284</Right><x>-2</x><y>-2</y><xscreen>184</xscreen><yscreen>200</yscreen><sizeHorzCX>155405</sizeHorzCX><sizeHorzCY>262467</sizeHorzCY><sizeVertCX>241554</sizeVertCX><sizeVertCY>671916</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>208</Bottom><Right>1186</Right><x>-2</x><y>-2</y><xscreen>1188</xscreen><yscreen>210</yscreen><sizeHorzCX>1003378</sizeHorzCX><sizeHorzCY>275591</sizeHorzCY><sizeVertCX>155405</sizeVertCX><sizeVertCY>262467</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

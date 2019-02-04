@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Boot_Controller_Console\boot_controller_rs232.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Boot_Controller\boot_controller_rs485.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Boot_Panel\boot_panel_RS485.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Controller\Custom\HW0323\CV0323.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Controller\Custom\HW0324\CV0324.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Controller\Custom\HW0326\CV0326.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Controller\Custom\HW050\CV050.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_2x\TP_2x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_2x_3pcs\TP_2x_3pcs.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_2x_Tsensor\TP_2x_Tsensor.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_4x\TP_4x.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_Kotel\TP_Kotel.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_Presentation\TP_Presentation.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Panel\Panel\Custom\Standard\TP_Pritochka\TP_Pritochka.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

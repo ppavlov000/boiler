@@ -1,0 +1,31 @@
+[CodeCoverage]
+Enabled=_ 0
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[Profiling]
+Enabled=0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Bp0=_ "STD_CODE" "{H:\Ura\Projects\20090804_Lednoe\IAR\Panel\Panel\System\RS485_Master\RS485_M_functions.c}.552.1@1" 1 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{W:\Ura\Projects\20090804_Lednoe\IAR\Panel\Panel\System\Service\service.c}.196.30@1" 1 0 0 0 "" 0 ""
+Count=2
+[TraceHelper]
+Enabled=0
+ShowSource=1

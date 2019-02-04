@@ -1,0 +1,315 @@
+//---------------------------------------------------------------------------------------------------
+// Dnepropetrovsk
+// Shevchenko 16 
+//---------------------------------------------------------------------------------------------------
+// Errors list
+//#define  cont_no_error 			0x0000
+//#define  cont_bad_thermo_sensor 	                0x0100
+//#define  cont_freezing_channel		0x0200
+//#define  cont_freezing_external		0x0300
+//#define  cont_low_temperature		0x0400
+//#define  cont_high_temperature		0x0500
+//#define  cont_bad_fan_in			0x0600
+//#define  cont_bad_filter			0x0700
+//#define  cont_bad_220			0x0800
+//#define  cont_bad_fan_out	0x0900
+//---------------------------------------------------------------------------------------------------
+// Interrupt table
+goto automat_mode;
+goto stop_mode;
+goto manual_mode;
+goto error_mode;
+goto custom_mode;
+end;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+custom_mode:
+mode=4;
+end;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+error_mode:
+mode=3;
+end;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+manual_mode:
+mode=2;
+end;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+stop_mode:
+//mode=1;
+goto automat_mode;
+end;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+check_sensor_0:
+pass_if_false reg[0];       // No errors
+ret;
+reg[10]=ai[0]>900;
+pass_if_true reg[10];
+ret;
+error=0x0101;
+pid.enable[0]=2;   // Ostanov
+in_param[3]=pid.enable[0];	// PID mode
+reg[0]=1;
+ret;
+//---------------------------------------------------------------------------------------------------
+check_sensor_1:
+pass_if_false reg[0];       // No errors
+ret;
+reg[10]=ai[1]>900;
+pass_if_true reg[10];
+ret;
+error=0x0102;
+pid.enable[0]=2;   // Ostanov
+in_param[3]=pid.enable[0];	// PID mode
+reg[0]=1;
+ret;
+//---------------------------------------------------------------------------------------------------
+check_sensor_2:
+pass_if_false reg[0];       // No errors
+ret;
+reg[10]=ai[2]>900;
+pass_if_true reg[10];
+ret;
+error=0x0103;
+pid.enable[0]=2;   // Ostanov
+in_param[3]=pid.enable[0];	// PID mode
+reg[0]=1;
+ret;
+//---------------------------------------------------------------------------------------------------
+check_fan:
+pass_if_false timer[3];
+ret;
+pass_if_false di[0];        // If sensor shows ok then reset flag of error
+ret;
+// Set Error condition
+pass_if_false reg[0];       // Exit if error is set already
+ret;
+error=0x0601;
+pid.enable[0]=2;   // Ostanov
+reg[4]=1;
+reg[0]=1;
+ret;
+//---------------------------------------------------------------------------------------------------
+pritok_0_start:
+// Check errors
+call check_sensor_0;
+call check_sensor_1;
+call check_sensor_2;
+call check_fan;
+
+pass_if_false reg[0];       // No errors
+ret;
+pass_if_false timer[0];
+timer[3]=30;
+pass_if_false timer[0];
+pid.power[0]=999;
+pass_if_false timer[0];
+pid.power[1]=999;
+pass_if_false timer[0];
+ret;
+
+do[3]=1;
+do[4]=0;
+ret;
+//---------------------------------------------------------------------------------------------------
+pritok_0_stop:
+timer[0]=60;
+pid.power[0]=999;
+pid.power[1]=999;
+reg[0]=0;
+reg[1]=0;
+reg[2]=0;
+reg[3]=0;
+reg[4]=0;
+reg[5]=0;
+
+do[3]=0;
+do[4]=0;
+timer[3]=30;
+ret;
+//---------------------------------------------------------------------------------------------------
+pritok_0_brakedown:
+timer[0]=60;
+pid.power[0]=999;
+pid.power[1]=999;
+do[3]=0;
+do[4]=0;
+timer[3]=30;
+ret;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+// Main program for handling any equipment
+automat_mode:
+mode=0;
+beep=100;
+// Pid cofficients init
+//pid.enable[0]=0;
+pid.channel[0]=2;
+//pid.t0[0]=220;
+//pid.p[0]=200;
+//pid.i[0]=200;
+//pid.d[0]=1000;
+//pid.ti[0]=60;
+pid.slow[0]=2;
+pid.fast[0]=10;
+pid.pow_min[0]=160;
+pid.pow_max[0]=600;
+pid.t3max[0]=110;
+pid.power[0]=999;
+pid.p3[0]=0;
+
+//pid.enable[1]=0;
+pid.channel[1]=0;
+//pid.t0[1]=500;
+//pid.p[0]=200;
+//pid.i[0]=200;
+//pid.d[0]=1000;
+//pid.ti[0]=60;
+//pid.pow_min[0]=200;
+//pid.pow_max[0]=1000;
+pid.slow[1]=10;
+pid.fast[1]=80;
+pid.t3max[1]=110;
+pid.power[1]=999;
+pid.p3[1]=0;
+
+reg[0]=0;  // Sign of present brakedown, can be reset reset only in STOP mode
+reg[1]=0; 
+reg[2]=0;  // Sign of bad filter but  NOT brakedown
+reg[3]=0;  // Sign of bad filter but NOT brakedown 
+reg[4]=0;  // Sign of brakedown Fan in
+reg[5]=0;  // Sign of brakedown Fan out
+reg[9]=0;  
+reg[11]=0; 
+reg[12]=0; 
+
+ao[0]=0;
+//ao[1]=0;
+
+do[0]=0;
+do[1]=0;
+do[2]=0;
+do[3]=0;
+do[4]=0;
+do[5]=0;
+do[6]=0;
+
+timer[0]=60;
+timer[1]=86400;
+timer[2]=0;			// Filter contact jitter
+timer[3]=210;			// Fan sensors timeout 20s
+
+in_param[0]=pid.t0[0];	// Preset temperature
+//in_param[1]=1;	// Preset fan speed
+in_param[2]=ao[0];	// Preset air injector
+in_param[3]=pid.enable[0];	// PID mode
+in_param[4]=pid.pow_min[0];  // Min protok
+in_param[5]=pid.pow_min[1];  // Minimal protok
+in_param[6]=0;  // Empty
+
+out_param[0]=0;	// Preset temperature
+out_param[1]=0;	// Preset fan speed
+out_param[2]=0;	// Preset air injector
+out_param[3]=0;	// PID mode
+out_param[4]=0; // AI[0]
+out_param[5]=0; // AI[1]
+out_param[6]=0; // AI[2]
+out_param[7]=0; // Minimal protok
+out_param[8]=0; // Empty
+out_param[9]=0; // Empty
+out_param[10]=0; // Empty
+//*****************************************************************************
+// Main loop
+//*****************************************************************************
+main_loop:
+
+// In parameters handling
+pid.t0[0]=in_param[0];	// Preset temperature
+//in_param[1];	// Preset fan speed
+ao[0]=in_param[2];	// Preset air injector
+pid.enable[0]=in_param[3];	// PID mode
+pid.pow_min[0]=in_param[4];
+pid.pow_min[1]=in_param[5];
+// Out parameters handling
+out_param[0]=pid.t0[0];	// Preset temperature
+out_param[1]=in_param[1];	// Preset fan speed
+out_param[2]=ao[0];	// Preset air injector
+out_param[3]=pid.enable[0];	// PID mode
+out_param[4]=ai[0];
+out_param[5]=ai[1];
+out_param[6]=ai[2];
+out_param[7]=pid.pow_min[1];
+
+reg[6]=in_param[1]==1;
+pass_if_false reg[6];
+do[3]=1;
+pass_if_false reg[6];
+do[4]=0;
+
+reg[6]=in_param[1]==2;
+pass_if_false reg[6];
+do[3]=0;
+pass_if_false reg[6];
+do[4]=1;
+
+
+do[1]=pid.open[1];
+do[2]=pid.close[1];
+//ao[0]=pid.power[0];
+pid.t0[1]=pid.power[0];
+pid.enable[1]=pid.enable[0];
+
+reg[6]=pid.enable[0]==1;
+pass_if_false reg[6];
+call pritok_0_start;
+
+reg[6]=pid.enable[0]==3;
+pass_if_false reg[6];
+call pritok_0_start;
+
+reg[6]=pid.enable[0]==2;
+pass_if_false reg[6];
+call pritok_0_brakedown;
+
+reg[6]=pid.enable[0]==0;
+pass_if_false reg[6];
+call pritok_0_stop;
+
+pass_if_true timer[1];
+call Service_Open_0;
+
+goto main_loop;
+//*****************************************************************************
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+// Routines
+Delay_ms:
+pass_if_false timer[0];
+goto Delay_ms;
+ret;
+//---------------------------------------------------------------------------------------------------
+Service_Open_0:
+timer[1]=155;
+Service_Open_0_loop:
+pid.power[0]=999;
+pid.power[1]=999;
+do[1]=pid.open[1];
+do[2]=pid.close[1];
+pass_if_false timer[1];
+goto Service_Open_0_loop;
+timer[1]=86400;
+ret;
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------

@@ -1,0 +1,1 @@
+cmd /k c:\avrtools\AVReal\avreal32.exe +MEGA128 -p1 -ab -o1MHz -w -l2 -fBLEV=1,BODEN=0,SUT=3,CKSEL=e,BLB1=0,BLB0=3,OCDEN=1,JTAGEN=1,CKOPT=1,EESV=1,BSIZ=0,BRST=0,M103C=1,WDTON=1 

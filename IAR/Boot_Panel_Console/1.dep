@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2277483637</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Include\crc.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\TMP441.r90</file>
+      <file>$PROJ_DIR$\Debug\List\TMP441.lst</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul.r90</file>
+      <file>$PROJ_DIR$\Debug\List\console.lst</file>
+      <file>$TOOLKIT_DIR$\inc\iom128.h</file>
+      <file>$PROJ_DIR$\Debug\List\fram31xx.s90</file>
+      <file>$PROJ_DIR$\Debug\List\iflash.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\xmodem.pbi</file>
+      <file>$PROJ_DIR$\Include\TMP441.c</file>
+      <file>$PROJ_DIR$\Include\fram31xx.h</file>
+      <file>$PROJ_DIR$\Include\errors.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
+      <file>$PROJ_DIR$\Include\io.h</file>
+      <file>$PROJ_DIR$\Include\header.h</file>
+      <file>$PROJ_DIR$\console.h</file>
+      <file>$PROJ_DIR$\iflash.h</file>
+      <file>$PROJ_DIR$\Include\crc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\xmodem.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\iflash.r90</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\iflash.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\console.pbi</file>
+      <file>$PROJ_DIR$\mb.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\console.r90</file>
+      <file>$PROJ_DIR$\Include\defines.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\1.pbd</file>
+      <file>$PROJ_DIR$\Include\i2c.c</file>
+      <file>$PROJ_DIR$\Include\fram31xx.c</file>
+      <file>$PROJ_DIR$\iflash.c</file>
+      <file>$PROJ_DIR$\spm.asm</file>
+      <file>$PROJ_DIR$\Include\str.c</file>
+      <file>$PROJ_DIR$\xmodem.c</file>
+      <file>$PROJ_DIR$\timer16.c</file>
+      <file>$PROJ_DIR$\Debug\Exe\1.hex</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\console.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\fram31xx.r90</file>
+      <file>$PROJ_DIR$\Include\types.h</file>
+      <file>$PROJ_DIR$\plm.h</file>
+      <file>$PROJ_DIR$\Debug\List\1.map</file>
+      <file>$PROJ_DIR$\timer16.h</file>
+      <file>$PROJ_DIR$\Debug\List\iflash.s90</file>
+      <file>$PROJ_DIR$\Debug\List\console.s90</file>
+      <file>$PROJ_DIR$\Include\TMP441.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\TMP441.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\main.s90</file>
+      <file>$PROJ_DIR$\spm.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Include\str.h</file>
+      <file>$PROJ_DIR$\Debug\List\TMP441.s90</file>
+      <file>$PROJ_DIR$\Debug\List\main.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.r90</file>
+      <file>$PROJ_DIR$\Debug\List\fram31xx.lst</file>
+      <file>$PROJ_DIR$\Include\param.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$PROJ_DIR$\Include\i2c.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fram31xx.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\spm.r90</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$PROJ_DIR$\xmodem.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+      <file>$PROJ_DIR$\main.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\Include\crc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Include\TMP441.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 1 54 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 42 24 23 5 67 17 45 18 51 68 60 65 43 53 58 15 13 12 16 29 61 48</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\1.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 26 8 62 14 25 52 66 59 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Include\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Include\fram31xx.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 41 6 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 42 24 23 5 67 17 45 18 51 68 60 65 43 53 58 15 13 12 16 29 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\iflash.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 22 46 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 42 24 23 5 67 17 45 18 51 68 60 65 43 53 58 15 13 12 16 29 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\spm.asm</name>
+      <outputs>
+        <tool>
+          <name>AAVR</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Include\str.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\xmodem.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\timer16.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\1.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 27 28 63 41 21 22 69 64 9 56 20 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\console.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 28 47 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 42 24 23 5 67 17 45 18 51 68 60 65 43 53 58 15 13 12 16 29 61</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39 42 24 23 5 67 17 45 18 51 68 60 65 43 53 58 15 13 12 16 29 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 69 50 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 42 24 23 5 67 17 45 18 51 68 60 65 43 53 58 15 13 12 16 29 61</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

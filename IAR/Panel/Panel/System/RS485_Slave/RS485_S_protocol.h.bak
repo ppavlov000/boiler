@@ -1,0 +1,62 @@
+#ifndef __UARTPROTOCOL
+#define __UARTPROTOCOL
+//---------------------------------------------------------------------------
+#include "..\..\System\Standard\types.h"
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+typedef struct
+{
+	u8 txnew;
+	u8 rxnew;
+	u8 rxcount;
+	u8 txcount;	
+	u8 status;
+	u8 error;	
+	u8 done;
+	u8 channel;
+	// Exchange parameters
+	u8 re_status;
+	u8 data_status;
+//	TTime ft;	
+//	TExchange exch;
+}TUpcState;
+//---------------------------------------------------------------------------
+extern TExchange exch;
+//extern TExchange old_exch;
+extern TExchange own_state;
+//---------------------------------------------------------------------------
+extern TBuff rx,tx;
+extern TUpcState upc;
+//extern TExchange own_state;
+//eu8 re_status;
+//eu8 received;
+eu8 first_start;
+//-----------------------------------------------------------------------------------
+#if __MODBUS_ENA==0
+//---------------------------------------------------------------------------
+void upc_init();
+void upc_TXHandler();
+u16 upc_crc_head(TBuff *buff);
+u16 upc_crc_data(TBuff *buff);
+void upc_Set_Panel_Temperature();
+void upc_Set_Panel_Time();
+void upc_answer_sys();
+void upc_answer_reset();
+void upc_RXHandler();
+void upc_answer_info(u8 what);
+void upc_answer_alarm();
+void upc_answer_set_alarm();
+void upc_Answer_Custom_Info();
+void upc_Set_Custom_Info();
+
+void upc_answer_set_transparent();
+void upc_answer_release_transparent();
+void upc_S_transparent_packet();
+void upc_S_transparent_packet_2();
+void upc_S_return_transparent_packet();
+void M_Set_Manual_Mode(u8 id,u8 mode);
+void M_Set_Season(u8 id,TSeason *_season);
+void M_Get_Season(u8 id);
+//---------------------------------------------------------------------------
+#endif
+#endif

@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>479593266</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Controller\System\controller_data_define.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_4.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_functions.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_main.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\T6963\t6963.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_contrast.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_menu.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_protocol.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Timer\timer16.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_menu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_ac_menu.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_day_night.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Master\uart_protocol.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_3.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_temperature_set.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_season.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\service.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_min_protok.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\TSC2046\tsc2046.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_functions.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_2.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\tsc2046.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Master\uart_functions.c</file>
+      <file>$PROJ_DIR$\..\..\..\Hardware_Atmel\memory.h</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl3s-ec_mul.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_calibrate.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_set_time.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_screen_0.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_set_time.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\console.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_protocol.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_0.r90</file>
+      <file>$PROJ_DIR$\..\..\..\Hardware_Atmel\functions.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm_confirm.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_template.r90</file>
+      <file>$TOOLKIT_DIR$\src\template\cfgm128.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_template.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_password.r90</file>
+      <file>$PROJ_DIR$\..\..\..\..\System\Standard\types.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bmp.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\io.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_cell.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\T6963.pbi</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_0.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_tech_menu.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_alarm.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_min_protok_.pbi</file>
+      <file>$PROJ_DIR$\Menu_new\dimmer.c</file>
+      <file>$PROJ_DIR$\Debug\List\1.map</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_alarm.h</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_alarm_confirm.c</file>
+      <file>$PROJ_DIR$\..\TP_0\Menu_new\dimmer.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\custom.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_calibrate.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\Bmp\bmp.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_functions.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Master\RS485_M_functions.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_0.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm_confirm.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\IO\io.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_1.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\T6963\T6963.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_calibrate.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_set_time.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_2.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm_password.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Uart\MenuItems_SERVICE.h</file>
+      <file>$PROJ_DIR$\..\..\..\Hardware_Atmel\functions.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_min_protok.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_season.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_password.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_set_time.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\str.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_tech_temperature.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+      <file>$PROJ_DIR$\Custom\custom.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\bmp.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_temperature.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_screen_0.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_password.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\T6963.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_temperature_set.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Bmp\BMPPack.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\1.hex</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Slave\uart_protocol.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\Uart\str.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_min_protok_.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_tech_menu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_temperature_set.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_1.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_1.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_ac_menu.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_temperature.r90</file>
+      <file>$TOOLKIT_DIR$\inc\iom128.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Slave\RS485_S_protocol.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_M_protocol.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\dimmer.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Misc\crc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm_snooze.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_menu.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_alarm_password.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_adjust.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_menu.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tsc2046.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer16.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Master\RS485_M_protocol.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_menu.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_day_night.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_4.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Slave\RS485_S_functions.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_day_night.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_ac_menu.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Uart\console.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Slave\uart_functions.c</file>
+      <file>$PROJ_DIR$\..\..\..\Hardware_Atmel\pinout.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_S_protocol.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_cell.c</file>
+      <file>$TOOLKIT_DIR$\src\template\cfg3s.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\functions.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\io.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_cell.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_ac_menu.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_tech_contrast.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_calibrate.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_adjust.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_adjust.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_template.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_screen_0.r90</file>
+      <file>$PROJ_DIR$\..\..\..\..\System\Standard\panel_data_define.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Master\RS485_M_protocol.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\1.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Master\RS485_M_misc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Misc\crc.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_3.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Bmp\bmp.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\RS485_Slave\uart_protocol.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_alarm_snooze.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\main.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\System\Standard\sys_define.h</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_2.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\System\Standard\data_define.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\System\Standard\protocol.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_protocol.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\TSC2046\tsc2046.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_min_protok.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_3.c</file>
+      <file>$PROJ_DIR$\Menu_new\dimmer.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\custom.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_main.r90</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_min_protok_.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\console.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm_password.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart_functions.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Uart\MenuItems_SET.h</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_screen_0.c</file>
+      <file>$PROJ_DIR$\Menu_new\lcd_page_season.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_M_functions.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Service\service.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_alarm_snooze.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\service.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.r90</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_M_protocol.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_temperature.h</file>
+      <file>$PROJ_DIR$\..\..\..\System\Service\service.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Timer\timer16.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Uart\str.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_temperature.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_tech_contrast.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\dimmer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\IO\io.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_page_4.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_tech_temperature.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Uart\console.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\RS485_M_functions.r90</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_contrast.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_alarm_snooze.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_temperature.c</file>
+      <file>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_template.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 162</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_contrast.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 181</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_menu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 95</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 91 55</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Master\uart_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Master\uart_functions.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Hardware_Atmel\functions.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 46 146 101 0 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46 146 101 0 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_alarm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\dimmer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 182</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_alarm_confirm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Bmp\bmp.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 159 136 46 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 58 136 46 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Master\RS485_M_functions.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 187</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 170</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\IO\io.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_1.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\T6963\T6963.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_calibrate.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_password.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_set_time.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Custom\custom.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 161</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_temperature.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_temperature_set.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\1.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 41 127 187 175 24 125 88 84 174 161 39 47 30 116 36 98 25 144 2 134 120 22 33 132 51 40 82 173 79 114 113 29</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_ac_menu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Slave\RS485_S_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 125</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_menu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_alarm_password.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 165</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_adjust.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 134</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_day_night.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_4.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Slave\RS485_S_functions.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Slave\uart_functions.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_cell.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Master\RS485_M_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 175</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 46 146 101 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 46 146 101 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\1.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 170 104 62 35 49 45 81 59 128 129 133 11 64 97 71 16 184 135 14 75 31 181 95 42 142 21 3 107 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Misc\crc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 106 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\RS485_Slave\uart_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_alarm_snooze.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 189</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_2.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\TSC2046\tsc2046.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_min_protok.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_3.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_min_protok_.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 94</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_screen_0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 137</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 136 46 146 60 56 172 131 112 70 188 176 159 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Menu_new\lcd_page_season.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Service\service.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 173</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Timer\timer16.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Uart\str.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 122 44 93</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122 44 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Uart\console.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 167 73 46 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 122 171 23 93 10 6 145 90 183 92 167 73 46 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_tech_temperature.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 185</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 153 154 106 171 23 93 10 6 145 90 183 92 141 115 136 46 146 60 56 172 131 112 70 188 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\System\Menu_new\lcd_template.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 124 150 28 44 74 18 17 1 138 154 106 171 23 93 10 6 145 90 183 92 141 115</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

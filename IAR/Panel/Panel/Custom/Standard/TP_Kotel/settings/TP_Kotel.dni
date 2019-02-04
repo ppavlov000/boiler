@@ -1,0 +1,11 @@
+[CodeCoverage]
+Enabled=_ 0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\Menu_new\lcd_page_0.c}.1067.16@1" 1 0 0 0 "" 0 ""
+Count=1
+[Aliases]
+Count=0
+SuppressDialog=0
+[TraceHelper]
+Enabled=0
+ShowSource=1

@@ -1,0 +1,49 @@
+//=============================================================================
+// Copyright (C) 2003 Atmel Corporation
+//
+// File:			bootldr_interrupts.xcl
+// Linker:			IAR Atmel AVR Linker
+// Created:			14-Feb-2003	JP (Atmel Finland)
+// Modified:
+//
+// Support Mail:	avr@atmel.com
+//
+// Description:		Linker file. This file is configured from
+//
+//						Project Options->XLINK->#define
+//
+//					This version reserves the interrupt vector table for
+//					interrupts only, instead of utilizing it for other code.
+//					
+// Other Info:		For more information, refer to the Application Note
+//					Documentation.
+//=============================================================================
+
+-ca90
+-w29
+
+
+//=============================================================================
+// Interrupt vectors 
+
+-Z(CODE)INTVEC=(FLASH_SIZE-BOOT_SIZE)-(FLASH_SIZE-BOOT_SIZE+IVT_SIZE-1)
+
+//=============================================================================
+// Fill unused with RETI
+
+-H1895 -h(CODE)(FLASH_SIZE-BOOT_SIZE)-(FLASH_SIZE-BOOT_SIZE+IVT_SIZE-1)
+
+//=============================================================================
+// Code memory
+
+-Z(CODE)NEAR_F,HUGE_F,SWITCH,INITTAB,DIFUNCT,CODE=(FLASH_SIZE-BOOT_SIZE+IVT_SIZE)-(FLASH_SIZE-1)
+-Z(FARCODE)FAR_F=(FLASH_SIZE-BOOT_SIZE+IVT_SIZE)-(FLASH_SIZE-1)
+
+
+//=============================================================================
+// RAM
+
+-Z(DATA)TINY_I,TINY_Z,TINY_N=RAM_BASE-FF
+-Z(DATA)NEAR_I,NEAR_Z=RAM_BASE-(RAM_BASE+RAM_SIZE-1)
+-Z(DATA)RSTACK+40=RAM_BASE-(RAM_BASE+RAM_SIZE-1)
+-Z(DATA)CSTACK+(RAM_SIZE-40)=RAM_BASE-(RAM_BASE+RAM_SIZE-1)

@@ -1,0 +1,2 @@
+bin_boot.exe -f ..\Debug\Exe\TP_Presentation.a90 -o panel_sys.bin -i "Clean PRJ Presentation" -u 1 -h 0x02000031 -s 0x02000031
+bin_boot.exe -f ..\..\..\..\System\Pict_Presentation\pack.bin -o panel_pict.bin -i "Clean PRJ Pictures" -u 1 -h 0x02000031 -s 0x02000031
