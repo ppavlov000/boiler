@@ -1,32 +1,12 @@
 #include "..\main.h"
 
-//I2C_VARS I2C;
-/*
-//-----------------------------------------------------------------------------
-void I2C_SlaveStart(void)
-{
- TWDR = 0xFF;
- TWCR = Bit(TWEA)|Bit(TWEN)|Bit(TWIE)|Bit(TWINT);
-}
-//-----------------------------------------------------------------------------
-void I2C_SetLocalAdr(uchar adr, uchar gen_en)
-{
-  // set local device address (used in slave mode only)
-  TWAR = (adr&0xFE) | (gen_en?1:0);
-}
-//-----------------------------------------------------------------------------
-void I2C_SetSlaveTxDataSize(uchar size)
-{
-  I2C.TxSize = size;
-}
-*/
 //-----------------------------------------------------------------------------
 void i2c_set_bitrate(usint bitrateKHz)
 {
   uchar bitrate_div;
    ClearBit(TWSR,TWPS0);
    ClearBit(TWSR,TWPS1);
-  // calculate bitrate division   
+  // calculate bitrate division
   bitrate_div = ((CPU_CLOCK/1000l)/bitrateKHz);
   if (bitrate_div >= 16)
    bitrate_div = (bitrate_div-16)/2;
@@ -189,4 +169,3 @@ sint I2C_NiMasterRead(uchar adr,
   return r;
 }
 //-----------------------------------------------------------------------------
-

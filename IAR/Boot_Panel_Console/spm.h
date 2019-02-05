@@ -5,7 +5,7 @@
 // Compiler:		IAR Atmel AVR Assembler
 // Output Size:
 // Created:			4-Feb-2003	JP (Atmel Finland)
-// Modified:	
+// Modified:
 //
 // Support Mail:	avr@atmel.com
 //
@@ -29,14 +29,6 @@
 #endif
 #include "Include\types.h"
 
-/*
-#define BLB12 0x20 //5 Boot lock bit 1 (unprogrammed)
-#define BLB11 0x10 //4 Boot lock bit 1 (unprogrammed)
-#define BLB02 0x08 //3 Boot lock bit 1 (unprogrammed)
-#define BLB01 0x04 //2 Boot lock bit 1 (unprogrammed)
-#define LB2   0x02 //1 Lock bit 1 (unprogrammed)
-#define LB1   0x01 //0 Lock bit 1 (unprogrammed)
-*/
 extern void spmWriteWord(u8 APPFLASH *addr, u16 data);
 extern int  spmReadWord(u8 APPFLASH *addr);
 extern void spmErasePage(u8 APPFLASH *addr);

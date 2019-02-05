@@ -19,9 +19,6 @@ char in;
 u16 con_st; // Console command state
 u8 ESC=0;
 u32 MAddr,MData;
-//u16 wtmp;
-//u8  ctmp;
-//double dtmp;
 //-----------------------------------------------------------------------------------
 void con_init()
 {
@@ -85,10 +82,10 @@ void con_handle()
         case '?':
           sendchar(in);
 //	  		TMP441_read(TMP441_reg_Device_ID,&tmp,1);
-//			ByteToStr(outtxt,&tmp,1);	
+//			ByteToStr(outtxt,&tmp,1);
 //			sendchar(tmp>>8 + '0');
-//			sendchar(tmp & 0x0f + '0');			
-//			sendchar(tmp & 0x0f + '0');					
+//			sendchar(tmp & 0x0f + '0');
+//			sendchar(tmp & 0x0f + '0');
           *inptr=in;
           inptr++;
           *inptr=0;
@@ -151,13 +148,13 @@ void word_handler()
 				sprintf(outtxt,envitation);
    	  			break;
 	  		}
-  			//---------------------------	  		
+  			//---------------------------
   			if(con_st==con_Down_Mod)
   			if(strcmp(word,slovar[2])==0)
   			{
 				st=1;
 				sprintf(outtxt,"\n\r Ready for downloading Atmel application image...");
-//				spmRemoveProtection;	
+//				spmRemoveProtection;
 				xmod_status=1;
 				header=1;
 				Flash_Start_Write(APPL_FLASH_START);
@@ -169,27 +166,27 @@ void word_handler()
 				  	blink_booting();
 				  	fram_watchdog_reset();
 				}
-//				sprintf(outtxt,"\n\r Press any key");		
+//				sprintf(outtxt,"\n\r Press any key");
 				switch(ctmp)
 				{
 					case XMOD_Ok: Flash_End_Write();sprintf(outtxt,"\n\r Download is successful complete...\n\r");break;
 					case XMOD_Error: while(recchar()==-1){fram_watchdog_reset();};sprintf(outtxt,"\n\r Download error!\n\r");break;
 					case XMOD_Wrong_HW_Ver:while(recchar()==-1){fram_watchdog_reset();}; sprintf(outtxt,"\n\r Wrong HW Version! Download correct file\n\r");break;
 				}
-				strcpy(outtxt,envitation);wait_con_free();	
+				strcpy(outtxt,envitation);wait_con_free();
 				break;
-						
+
   			}
-  			//---------------------------	  		
+  			//---------------------------
   			if(con_st==con_Down_Mod)
   			if(strcmp(word,slovar[3])==0)
   			{
   				st=1;
   	  			sprintf(outtxt,"\n\r Ready for downloading pictures image...");
-				wait_con_free();	
-//				spmRemoveProtection;		
-				header=2;	
-				xmod_status=2;				
+				wait_con_free();
+//				spmRemoveProtection;
+				header=2;
+				xmod_status=2;
 				Flash_Start_Write(PLM_FLASH_START);
 				Xmodem_Start();
 				ctmp=XMOD_None;
@@ -205,21 +202,21 @@ void word_handler()
 					case XMOD_Ok: Flash_End_Write();sprintf(outtxt,"\n\r Download is successful complete...\n\r");break;
 					case XMOD_Error:while(recchar()==-1){fram_watchdog_reset();}; sprintf(outtxt,"\n\r Download error!\n\r");break;
 					case XMOD_Wrong_HW_Ver: while(recchar()==-1){fram_watchdog_reset();};sprintf(outtxt,"\n\r Wrong HW Version! Download correct file\n\r");break;
-				}	
-				strcpy(outtxt,envitation);wait_con_free();						
-  			}	
+				}
+				strcpy(outtxt,envitation);wait_con_free();
+  			}
   			//---------------------------
   			if(strcmp(word,slovar[0])==0)
   			{
   				st=1;
   	  			sprintf(outtxt,"\n\r Test...\n\r");
 //				#define	FLASH_SIZE 0x20000
-//          #define	BOOT_SIZE 0x2000					
+//          #define	BOOT_SIZE 0x2000
 				fptr=0;
-				spmWriteWord(fptr,0x5555);		
+				spmWriteWord(fptr,0x5555);
 				spmProgramPage(fptr);
-  	  			sprintf(outtxt,"\n\r Test complete...\n\r");strcpy(outtxt,envitation);wait_con_free();	
-  	  			break;			
+  	  			sprintf(outtxt,"\n\r Test complete...\n\r");strcpy(outtxt,envitation);wait_con_free();
+  	  			break;
   			}
  			//---------------------------
 			if(strcmp(word,slovar[5])==0)
@@ -228,7 +225,7 @@ void word_handler()
 //				spmEnableFullProtection;
 				sprintf(outtxt,"\n\r Full protection is not accessible...\n\r");
 				break;
-  			}  	 			
+  			}
  			//---------------------------
 			if(strcmp(word,slovar[6])==0)
 			{
@@ -238,7 +235,7 @@ void word_handler()
 				//if((stat & 0x02)==0)
 				//	show_header(HPLM_FLASH_START);
 				sprintf(outtxt,"\n\r");
-  			}    					
+  			}
   			//---------------------------
   			if(strcmp(word,slovar[4])==0)
   			{
@@ -249,17 +246,17 @@ void word_handler()
         		key=0;
 				((void (*)())0x0000)();
   			}
-  			//---------------------------  			
+  			//---------------------------
   			if(st==0)
   	  		sprintf(outtxt,"\n\r Bad command..."
 									  "\n\r");strcpy(outtxt,envitation);wait_con_free();
   	break;
     case ' ':
-  			//---------------------------  			
+  			//---------------------------
   			if(strcmp(word,"")==0)
   			{
 	  		}
-  			//---------------------------	  		
+  			//---------------------------
   			if(strcmp(word,slovar[1])==0)
   			{
   			  st=1;
@@ -273,8 +270,8 @@ void word_handler()
    	  		sprintf(outtxt,"\n\r Avaible commands..."
 									  "\n\r      download atmega "
 									  "\n\r      download pictures "
-									  "\n\r      reset"		
-									  "\n\r      protect"									
+									  "\n\r      reset"
+									  "\n\r      protect"
 									  "\n\r");strcpy(outtxt,envitation);wait_con_free();
 	  		}
   	break;
@@ -315,7 +312,7 @@ void wait_con_free()
 {
 	while(outtxt[0]!=0)
 	{
-/*	
+/*
   		if(UCSR0A & (1<<TXC0))
   		{
     		if(*outptr!=0)
@@ -332,7 +329,7 @@ void wait_con_free()
     		}
 		}*/
 		con_handle();
-	}	
+	}
 }
 //-----------------------------------------------------------------------------------
 void sendchar(u8 sym)

@@ -64,9 +64,9 @@ char I2Cctrl_RxHnd(void *data, uchar size)
     break;
     //------------------------------------------------------
     case I2C_CMD_SetMode       :
-      if (req->SubCmd) 
+      if (req->SubCmd)
         i2c_ctrl_init_long_cmd(req->Cmd);
-      else 
+      else
         i2c_ctrl_make_short_cmd_rsp(Ok);
     break;
     //------------------------------------------------------
@@ -167,7 +167,7 @@ sint i2c_ctrl_make_err_rsp(sint r)
   rsp = &I2Cctrl.ErrRsp;
 
   rsp->Version = I2C_CTRL_Version;
-  rsp->Status  = I2Cctrl_Status_Boot | (I2Cctrl.ExecCmd?I2Cctrl_Status_Busy:0) | 
+  rsp->Status  = I2Cctrl_Status_Boot | (I2Cctrl.ExecCmd?I2Cctrl_Status_Busy:0) |
                                        ((r<0)?I2Cctrl_Status_Error:0);
   rsp->_res_   = 0;
   rsp->Size    = 2;
@@ -239,7 +239,7 @@ void i2c_ctrl_make_ver_info(void)
 {
 /*	usint size;
 	size = strlen_P((const __farflash s8 *)&Help[0][0]) + 1;
-	if (size > I2C_CTRL_RspDataSize) 
+	if (size > I2C_CTRL_RspDataSize)
 	{
     	i2c_ctrl_make_short_cmd_rsp(I2CCMD_Err_TxDataSize);
 		return;
@@ -259,7 +259,7 @@ void i2c_ctrl_make_fw_info(void)
   uchar i, loaded;
   sint r;
 
-// | (uchar) loaded cnt | 
+// | (uchar) loaded cnt |
 // | (uchar) number | (usint) start | (usint) size | (sint) status | (uchar x CFG_ImageName) name |
 
   //--- calculate loaded images count ----------------------
@@ -299,14 +299,13 @@ void i2c_ctrl_boot_erase(void)
   n = I2Cctrl.Req.SubCmd;
 
   //--- erasing all images ---------------------------------
-  if (n == 0xff) 
+  if (n == 0xff)
     ret = 1;//erase_image(-1);
   else
     ret = 1;//erase_image(n);
 
   i2c_ctrl_make_short_cmd_rsp(ret);
 }
-
 
 //-----------------------------------------------------------------------------
 //
@@ -348,7 +347,7 @@ sint i2c_ctrl_boot_prepare(void)
 //-----------------------------------------------------------------------------
 //
 //-------------------------------------------------
-sint i2c_ctrl_boot_header(uchar *p, usint s) 
+sint i2c_ctrl_boot_header(uchar *p, usint s)
 {
  uchar img_correct;
 /* DL_HEADER hdr;

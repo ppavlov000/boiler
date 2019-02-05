@@ -10,8 +10,6 @@
 #include "iflash.h"
 #include "xmodem.h"
 #include "inavr.h"
-//#include <stdlib.h>
-//#include "spm.h"
 #include "plm.h"
 
 #include "Include\str.h"

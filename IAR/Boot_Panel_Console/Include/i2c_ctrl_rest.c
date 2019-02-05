@@ -10,11 +10,6 @@ char I2Cctrl_RxHnd(void *data, uchar size)
 
   req = (I2C_CTRL_REQ *)data;
 
-//  printf_P(sptr "\n\r  i2c cmd received: ");
-
-//mem_dump((usint)data, size, 0);
-//printf_P(sptr "\n\r");
-
   if (size < 5) {
     Err_DisplayMessage(i2c_ctrl_make_err_rsp(I2CCMD_Err_RxDataSize));
     return 1;
@@ -54,97 +49,7 @@ char I2Cctrl_RxHnd(void *data, uchar size)
 //      printf_P(sptr "\tget version\n\r");
       i2c_ctrl_make_ver_info();
     break;
-/*    //------------------------------------------------------
-    case I2C_CMD_SetMode       :
-      if (req->SubCmd) {
-        printf_P(sptr "\tset work mode\n\r");
-        i2c_ctrl_make_short_cmd_rsp(Ok);
-      }
-      else {
-        printf_P(sptr "\tentering boot mode...");
-        i2c_ctrl_init_long_cmd(req->Cmd);
-      }
-    break;
     //------------------------------------------------------
-    case I2C_CMD_SetInterface  :
-//      printf_P(Mcfg_SetTuner);
-//      if (req->SubCmd) printf_P(Mcmd_Up);
-//      else             printf_P(Mcmd_AdmDown);
-//      printf_P(M_NewLine);
-//
-//      i2c_ctrl_init_long_cmd(req->Cmd);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetSysClk     :
-//      printf_P(Mcfg_SetTunerSysClk,v);
-//      ret = Hynix_SetSystemClock(v);
-//      i2c_ctrl_make_short_cmd_rsp(ret);
-//      Err_DisplayMessage(ret);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetFreq       :
-//      printf_P(Mcfg_SetTunerFreq,v);
-//      ret = Hynix_SetFreq(v);
-//      i2c_ctrl_make_short_cmd_rsp(ret);
-//      Err_DisplayMessage(ret);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetFComp      :
-//      printf_P(Mcfg_SetTunerCompFreq,v);
-//      i2c_ctrl_init_long_cmd(req->Cmd);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetAcq        :
-//      printf_P(Mcfg_SetTunerAcqRange,v);
-//      ret = Hynix_SetAcqRange(v);
-//      i2c_ctrl_make_short_cmd_rsp(ret);
-      Err_DisplayMessage(ret);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetRate       :
-      printf_P(Mcfg_SetTunerRate,v);
-      ret = Hynix_SetSymbolRate(v);
-      i2c_ctrl_make_short_cmd_rsp(ret);
-      Err_DisplayMessage(ret);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetPRate      :
-      printf_P(Mcfg_SetTunerPRate);
-      printf_P(CliCmd_GetViterbiRateMsg(i2c_ctrl_ulint2vr(v)));
-      printf_P(M_NewLine);
-      ret = Hynix_SetViterbiRate(i2c_ctrl_ulint2vr(v));
-      i2c_ctrl_make_short_cmd_rsp(ret);
-      Err_DisplayMessage(ret);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetLnbPower   :
-      printf_P(Mcfg_SetLnbPower);
-      switch (req->SubCmd) {
-        case 1  : printf_P(Mcmd_13v); HDM_LnbPower18(0); HDM_LnbPowerOn(1); break;
-        case 2  : printf_P(Mcmd_18v); HDM_LnbPower18(1); HDM_LnbPowerOn(1); break;
-        default : printf_P(Mcmd_Off);                    HDM_LnbPowerOn(0); break;
-      }
-      printf_P(M_NewLine);
-      i2c_ctrl_make_short_cmd_rsp(Ok);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetLnbTone    :
-      printf_P(Mcfg_SetLnb22kHz);
-      printf_P(req->SubCmd?Mcmd_On:Mcmd_Off);
-      printf_P(M_NewLine);
-      i2c_ctrl_init_long_cmd(req->Cmd);
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_GetIntStatus  :
-      printf_P(sptr "\tget interface\n\r");
-      i2c_ctrl_get_interface();
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_ClearStc      :
-      printf_P(sptr "\tclear stc\n\r");
-      i2c_ctrl_init_long_cmd(req->Cmd);
-    break;
-*/    //------------------------------------------------------
     default                    :
       Err_DisplayMessage(i2c_ctrl_make_err_rsp(I2CCMD_Err_UnknownCmd));
     break;
@@ -169,34 +74,6 @@ void I2Cctrl_Processor(void)
       WDTCR = Bit(WDCE)|Bit(WDE);
       WDTCR = Bit(WDE)|0x00;
       while(1);
-    //break;
-    //------------------------------------------------------
-/*    case I2C_CMD_SetInterface  :
-      ret = Hynix_SetInterface(I2Cctrl.Req.SubCmd?eInt_Trying:eInt_AdmDown);
-      Err_DisplayMessage(ret);
-      i2c_ctrl_make_short_cmd_rsp(ret);
-      I2Cctrl.ExecCmd = 0;
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetFComp      :
-      ret = PLL_SetRefFreq(v);
-      Err_DisplayMessage(ret);
-      i2c_ctrl_make_short_cmd_rsp(ret);
-      I2Cctrl.ExecCmd = 0;
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_SetLnbTone    :
-      ret = HDM_Turn22kHz(I2Cctrl.Req.SubCmd);
-      Err_DisplayMessage(ret);
-      i2c_ctrl_make_short_cmd_rsp(ret);
-      I2Cctrl.ExecCmd = 0;
-    break;
-    //------------------------------------------------------
-    case I2C_CMD_ClearStc      :
-      Hynix_ClearStc();
-      i2c_ctrl_make_short_cmd_rsp(Ok);
-      I2Cctrl.ExecCmd = 0;
-    break;*/
     //------------------------------------------------------
     case I2C_CMD_Init          :
       i2c_ctrl_make_short_cmd_rsp(Ok);
@@ -318,11 +195,11 @@ void i2c_ctrl_set_cmd_rsp(void)
 E_VITERBI_RATE i2c_ctrl_ulint2vr(ulint c)
 {
   switch (c) {
-    case 1 : return eVfix_1_2; 
-    case 2 : return eVfix_2_3; 
-    case 3 : return eVfix_3_4; 
-    case 4 : return eVfix_5_6; 
-    case 5 : return eVfix_7_8; 
+    case 1 : return eVfix_1_2;
+    case 2 : return eVfix_2_3;
+    case 3 : return eVfix_3_4;
+    case 4 : return eVfix_5_6;
+    case 5 : return eVfix_7_8;
   }
   return eVauto;
 }
@@ -333,11 +210,11 @@ E_VITERBI_RATE i2c_ctrl_ulint2vr(ulint c)
 uchar i2c_ctrl_vr2uchar(E_VITERBI_RATE vr)
 {
   switch (vr) {
-    case eVfix_1_2 : return 1; 
-    case eVfix_2_3 : return 2; 
-    case eVfix_3_4 : return 3; 
-    case eVfix_5_6 : return 4; 
-    case eVfix_7_8 : return 5; 
+    case eVfix_1_2 : return 1;
+    case eVfix_2_3 : return 2;
+    case eVfix_3_4 : return 3;
+    case eVfix_5_6 : return 4;
+    case eVfix_7_8 : return 5;
   }
   return 0;
 }

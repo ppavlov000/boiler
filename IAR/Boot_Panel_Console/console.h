@@ -20,15 +20,6 @@
 #define con_Set_Rate_arg    104
 #define con_Set_Filter_arg  105
 //-----------------------------------------------------------------------------------
-//extern char outtxt[400];
-//extern u32 ltmp;
-//extern u8  ctmp;
-//extern double dtmp;
-//extern u16 wtmp;
-//-----------------------------------------------------------------------------------
-//void sprintf(char *out,char *in);
-//void WordToStr(char *out,u16 *val);
-//void LongToStr(char *out,u32 *val);
 void con_init();
 void strlwr(char *str);
 void strfull(s8 *str);

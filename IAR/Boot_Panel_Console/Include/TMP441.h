@@ -4,9 +4,8 @@
 #include <iom128.h>
 #include "types.h"
 //-----------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------
-#define TMP441_reg_Manufacturer_ID				0xFE
-#define TMP441_reg_Device_ID					0xFF
+#define TMP441_reg_Manufacturer_ID				 0xFE
+#define TMP441_reg_Device_ID					     0xFF
 //-----------------------------------------------------------------------------------
 void TMP441_init();
 void TMP441_write(u8 addr,u8* data, u8 len);
